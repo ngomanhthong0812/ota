@@ -1,0 +1,25 @@
+.body_content-line::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: var(--ht-neutral-100-);
+}
+
+
+.room-item-empty:hover {
+    box-shadow:
+        var(--room-empty-color-100-) 0px 1px 10px 0px;
+}
+
+.room-item-out-of-service:hover {
+    box-shadow:
+        var(--room-out-of-service-color-100-) 0px 1px 10px 0px;
+}
+
+.room-item-occupied:hover {
+    box-shadow:
+        var(--room-occupied-color-100-) 0px 1px 10px 0px;
+}

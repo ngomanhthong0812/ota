@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --ht-body-bg-: #f0f1f3;
+    --navbar-color-: #279656;
+    --menu-item-color-: rgb(255, 255, 255);
+    --color-menu-icon-: #5d6877;
+    --room-empty-color-: #279656;
+    --room-booked-color-: #1877F2;
+    --room-not-arrived-color-: #d147a3;
+    --room-occupied-color-: #005254;
+    --room-out-of-service-color-: #f80;
+    --room-dirty-color-: #c00;
+
+    --room-empty-color-200-: #54ca85;
+    --room-empty-color-100-: #bdf6d4;
+
+    --room-booked-color-200-: #3a99e6;
+    --room-booked-color-100-: #90bfff;
+
+    --room-not-arrived-color-200-: #d56db7;
+    --room-not-arrived-color-100-: #e9b3db;
+
+    --room-occupied-color-200-: #007c6e;
+    --room-occupied-color-100-: #ace7df;
+
+    --room-out-of-service-color-200-: #ffb74d;
+    --room-out-of-service-color-100-: #f4e5c4;
+
+    --room-dirty-color-200-: #ffe6e6;
+    --room-dirty-color-100-: #ffcccc;
+
+    --ht-neutral-100-: #e6e8eb;
+    --ht-neutral-300-: #aaaaaa;
+}
+
+body {
+    @apply bg-[var(--ht-body-bg-)];
+}
+
+body svg {
+    @apply fill-white;
+}
+
+.layout-container {
+    @apply max-w-[1920px] m-auto
+}
+
+.menu-item-container {
+    @apply bg-[var(--menu-item-color-)] fixed left-0 top-[50px] h-full w-[200px]
+}
+
+.menu-item {
+    @apply flex p-3 gap-4 duration-300 font-[500] text-sm text-[var(--color-menu-icon-)] hover:bg-[var(--ht-body-bg-)] hover:text-[var(--navbar-color-)]
+}
+
+.menu-item:hover svg {
+    @apply fill-[var(--navbar-color-)]
+}
+
+.menu-item svg {
+    @apply fill-[var(--color-menu-icon-)];
+}
+
+.menu-item-container .active {
+    @apply bg-[var(--ht-body-bg-)] text-[var(--navbar-color-)]
+}
+
+.menu-item-container .active svg {
+    @apply fill-[var(--navbar-color-)]
+}
+
+.center {
+    @apply flex items-center justify-center
+}
+
+.room-empty {
+    @apply border-[var(--room-empty-color-)] text-[var(--room-empty-color-)];
+    /* Phòng trống */
+}
+
+.room-booked {
+    @apply border-[--room-booked-color-] text-[--room-booked-color-];
+    /* Phòng đã đặt */
+}
+
+.room-not-arrived {
+    @apply border-[var(--room-not-arrived-color-)] text-[var(--room-not-arrived-color-)];
+    /* Chưa đến */
+}
+
+.room-occupied {
+    @apply border-[var(--room-occupied-color-)] text-[var(--room-occupied-color-)];
+    /* Có khách */
+}
+
+.room-out-of-service {
+    @apply border-[var(--room-out-of-service-color-)] text-[var(--room-out-of-service-color-)];
+    /* Chứa đi */
+}
+
+.room-dirty {
+    @apply border-[var(--room-dirty-color-)] text-[var(--room-dirty-color-)];
+    /* Bẩn */
+}
+
+.status-item {
+    @apply flex gap-1 items-center justify-center border-[1.5px] font-[600] px-2 py-[3px] rounded-full whitespace-nowrap
+}

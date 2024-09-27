@@ -1,3 +1,0 @@
-# ota
-
-#Trinh Ngoc Quang
