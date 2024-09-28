@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    './index.html',
+    './**/*.html', // Tìm kiếm tất cả file HTML trong mọi thư mục
   ],
   theme: {
     extend: {},

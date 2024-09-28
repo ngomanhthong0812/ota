@@ -643,6 +643,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -655,12 +659,20 @@ video {
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -730,29 +742,22 @@ video {
   background-color: var(--room-dirty-color-200-);
 }
 
-.bg-\[var\(--room-empty-color-\)\] {
-  background-color: var(--room-empty-color-);
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[var\(--room-occupied-color-\)\] {
-  background-color: var(--room-occupied-color-);
-}
-
-.bg-\[var\(--room-occupied-color-200-\)\] {
-  background-color: var(--room-occupied-color-200-);
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-\[var\(--room-out-of-service-color-\)\] {
   background-color: var(--room-out-of-service-color-);
 }
 
-.bg-\[var\(--room-out-of-service-color-200-\)\] {
-  background-color: var(--room-out-of-service-color-200-);
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.bg-center {
+  background-position: center;
 }
 
 .p-1 {
@@ -790,6 +795,41 @@ video {
 .py-\[3px\] {
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-\[1px\] {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.py-\[px\] {
+  padding-top: px;
+  padding-bottom: px;
+}
+
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .text-center {
@@ -832,10 +872,6 @@ video {
   color: var(--color-menu-icon-);
 }
 
-.text-\[var\(--navbar-color-\)\] {
-  color: var(--navbar-color-);
-}
-
 .text-\[var\(--room-dirty-color-\)\] {
   color: var(--room-dirty-color-);
 }
@@ -850,39 +886,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\] {
+  color: ;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-:root {
-  --ht-body-bg-: #f0f1f3;
-  --navbar-color-: #279656;
-  --menu-item-color-: rgb(255, 255, 255);
-  --color-menu-icon-: #5d6877;
-  --room-empty-color-: #279656;
-  --room-booked-color-: #1877F2;
-  --room-not-arrived-color-: #d147a3;
-  --room-occupied-color-: #005254;
-  --room-out-of-service-color-: #f80;
-  --room-dirty-color-: #c00;
-  --room-empty-color-200-: #54ca85;
-  --room-empty-color-100-: #bdf6d4;
-  --room-booked-color-200-: #3a99e6;
-  --room-booked-color-100-: #90bfff;
-  --room-not-arrived-color-200-: #d56db7;
-  --room-not-arrived-color-100-: #e9b3db;
-  --room-occupied-color-200-: #007c6e;
-  --room-occupied-color-100-: #ace7df;
-  --room-out-of-service-color-200-: #ffb74d;
-  --room-out-of-service-color-100-: #f4e5c4;
-  --room-dirty-color-200-: #ffe6e6;
-  --room-dirty-color-100-: #ffcccc;
-  --ht-neutral-100-: #e6e8eb;
-  --ht-neutral-300-: #aaaaaa;
 }
 
 body {
@@ -995,6 +1008,12 @@ body svg {
   padding-top: 3px;
   padding-bottom: 3px;
   font-weight: 600;
+}
+
+.toolbar-top-type .active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  color: var(--navbar-color-);
 }
 
 .hover\:bg-\[var\(--ht-body-bg-\)\]:hover {

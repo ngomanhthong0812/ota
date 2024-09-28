@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+    <link href="../../src/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-[var(--navbar-color-)] flex justify-between p-2 h-[50px] fixed w-full text-white z-10">
+        <div class="logo flex items-center flex-1">
+            <div class="w-[200px] flex items-center gap-2">
+                <img src="https://i0.wp.com/www.writefromscratch.com/wp-content/uploads/2018/12/demo-logo.png?fit=539%2C244&ssl=1&w=640"
+                    alt="logo" width="80" height="80">
+                <div class="hotel-name font-[500]">
+                    Demo
+                </div>
+            </div>
+            <div class="search relative flex-1">
+                <input type="text" placeholder="Tìm kiếm..." class="w-full rounded-md px-6 py-2 text-sm text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                    style="fill: rgb(193, 193, 193);" class="absolute top-[50%] translate-y-[-45%] left-1">
+                    <path
+                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <div class=" flex flex-1 items-center justify-end gap-6">
+            <div class="account center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z">
+                    </path>
+                </svg>
+                TEST
+            </div>
+            <div class="country">
+                <img src="../../assets/vietnam.png" alt="" width="18" height="18">
+            </div>
+            <div class="notification">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z">
+                    </path>
+                </svg>
+            </div>
+            <div class="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="flex">
+        <!-- start menu -->
+        <nav class="menu-item-container">
+            <ul>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d=" M4 11h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm0 10h6a1 1 0
+                                 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm10 0h6a1 1 0 0 0 1-1v-6a1 1 0 0
+                                 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm7.293-14.707-3.586-3.586a.999.999 0 0 0-1.414
+                                 0l-3.586 3.586a.999.999 0 0 0 0 1.414l3.586 3.586a.999.999 0 0 0 1.414
+                                 0l3.586-3.586a.999.999 0 0 0 0-1.414z">
+                            </path>
+                        </svg>
+                        Thông tin chung
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M12 10c1.151 0 2-.848 2-2s-.849-2-2-2c-1.15 0-2 .848-2 2s.85 2 2 2zm0 1c-2.209 0-4 1.612-4 3.6v.386h8V14.6c0-1.988-1.791-3.6-4-3.6z">
+                            </path>
+                            <path
+                                d="M19 2H5c-1.103 0-2 .897-2 2v13c0 1.103.897 2 2 2h4l3 3 3-3h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-5 15-2 2-2-2H5V4h14l.002 13H14z">
+                            </path>
+                        </svg>
+                        Quản lý đặt phòng
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 6h16v2H4V6zm0 12v-6h16.001l.001 6H4z">
+                            </path>
+                            <path d="M6 14h6v2H6z"></path>
+                        </svg>
+                        Thu chi
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                        Quản lý bán hàng
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M7 14.001h2v2H7z"></path>
+                            <path
+                                d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z">
+                            </path>
+                        </svg>
+                        Buồng phòng
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                            </path>
+                        </svg>
+                        Email marketing
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 1.053.382 2.01 1 2.746V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.424c.618-.735 1-1.692 1-2.746V5c0-1.654-1.346-3-3-3zm1 3v2.831c0 1.14-.849 2.112-1.891 2.167L18 10c-1.103 0-2-.897-2-2V4h3c.552 0 1 .449 1 1zM10 8V4h4v4c0 1.103-.897 2-2 2s-2-.897-2-2zM4 5c0-.551.448-1 1-1h3v4c0 1.103-.897 2-2 2l-.109-.003C4.849 9.943 4 8.971 4 7.831V5zm6 11H6v-3h4v3z">
+                            </path>
+                        </svg>
+                        Quản lý kho
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm8 7h-1V4l5 5h-4z">
+                            </path>
+                        </svg>
+                        Báo cáo
+                    </a>
+                </li>
+            </ul>
+            <div class="fixed w-[200px] flex justify-end bottom-0 left-0 bg-[var(--navbar-color-)] p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                    </path>
+                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                </svg>
+            </div>
+        </nav>
+        <!-- end menu -->
+
+        <main class="ml-[200px] mt-[50px] w-[100%] p-3 text-sm text-[var(--color-menu-icon-)]">
+            <!-- start Toolbar Top -->
+            <div class="toolbar-top bg-white rounded-md p-2 flex text-xs border border-[var(--ht-neutral-100-)]">
+                <div class="flex-1 flex flex-col gap-3">
+                    <div class="status flex gap-3">
+                        <button class="room-empty status-item">Trống
+                            2</button>
+                        <button class="room-booked status-item">Đã
+                            đặt 0</button>
+                        <button class="room-not-arrived status-item">Chưa
+                            đến 0</button>
+                        <button class="room-occupied status-item">Có
+                            khách 2</button>
+                        <button class="room-out-of-service status-item">Chưa
+                            đi 1</button>
+                        <button class="room-dirty status-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 576 512"
+                                style="fill: var(--room-dirty-color-);">
+                                <path
+                                    d="M566.6 54.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192-34.7-34.7c-4.2-4.2-10-6.6-16-6.6c-12.5 0-22.6 10.1-22.6 22.6l0 29.1L364.3 320l29.1 0c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16l-34.7-34.7 192-192zM341.1 353.4L222.6 234.9c-42.7-3.7-85.2 11.7-115.8 42.3l-8 8C76.5 307.5 64 337.7 64 369.2c0 6.8 7.1 11.2 13.2 8.2l51.1-25.5c5-2.5 9.5 4.1 5.4 7.9L7.3 473.4C2.7 477.6 0 483.6 0 489.9C0 502.1 9.9 512 22.1 512l173.3 0c38.8 0 75.9-15.4 103.4-42.8c30.6-30.6 45.9-73.1 42.3-115.8z" />
+                            </svg>
+                            Bẩn 3
+                        </button>
+                    </div>
+                    <div class="flex toolbar-top-type">
+                        <div class="bg-[var(--ht-body-bg-)] flex rounded-3xl p-1 font-[600]">
+                            <button
+                                class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 active">
+                                Đặt phòng
+                            </button>
+                            <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300">
+                                Loại
+                            </button>
+                            <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300">
+                                Tầng
+                            </button>
+                            <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 ">
+                                Phòng
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <div class="flex-1 flex flex-col gap-3 items-end">
+                <div class="flex gap-3">
+                    <button class="center px-2 gap-1 text-xs bg-[var(--room-out-of-service-color-)] text-white rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                            style="fill: rgb(255, 255, 255);">
+                            <path d="M4 22h16a1 1 0 0 0 1-1v-8h-2v7H5V4h5V2H4a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1z">
+                            </path>
+                            <circle cx="12" cy="11" r="1"></circle>
+                            <path d="M15 11h2a5 5 0 0 0-5-5v2a3 3 0 0 1 3 3z"></path>
+                            <path
+                                d="M19 11h2a9 9 0 0 0-9-9v2a7 7 0 0 1 7 7zM9.65 15.67a1 1 0 0 0-.14-.51.76.76 0 0 0-.38-.31 2.3 2.3 0 0 0-.75-.09H7V18h.65v-1.35h.14a1.31 1.31 0 0 1 .33 0 .58.58 0 0 1 .19.14 4.72 4.72 0 0 1 .35.48l.47.7h.78l-.39-.63a3.56 3.56 0 0 0-.38-.53 1.25 1.25 0 0 0-.35-.27 1 1 0 0 0 .64-.3.84.84 0 0 0 .22-.57zm-.74.33a.4.4 0 0 1-.18.14 2.36 2.36 0 0 1-.59 0h-.49v-.82h1a.4.4 0 0 1 .25.13.36.36 0 0 1 .09.26.43.43 0 0 1-.08.29zM10.92 16.62h1.36v-.54h-1.36v-.77h1.57v-.55h-2.22V18h.65v-1.38zM13.01 14.76h.65V18h-.65zM16.1 14.82a2.48 2.48 0 0 0-.62-.06h-1.2V18h1.24a1.76 1.76 0 0 0 .57-.07 1.07 1.07 0 0 0 .46-.26 1.35 1.35 0 0 0 .35-.57 2 2 0 0 0 .1-.69 2.35 2.35 0 0 0-.11-.76 1.33 1.33 0 0 0-.31-.53 1.09 1.09 0 0 0-.48-.3zm.16 2.18a.74.74 0 0 1-.17.31.57.57 0 0 1-.27.13 1.79 1.79 0 0 1-.39 0h-.49v-2.13h.29a3.06 3.06 0 0 1 .54 0 .71.71 0 0 1 .3.15.82.82 0 0 1 .19.32 2.05 2.05 0 0 1 .06.57 2.41 2.41 0 0 1-.06.65z">
+                            </path>
+                        </svg>Đọc thẻ</button>
+                    <div class="relative flex-1 w-[100px]">
+                        <input type="text" placeholder="Phòng" class="w-full rounded-md px-6 py-[3px] text-xs text-black border">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            style="fill: rgb(193, 193, 193);" class="absolute top-[50%] translate-y-[-45%] left-1">
+                            <path
+                                d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- end Toolbar Top -->
+
+            <!-- start Body Content -->
+            <div class="body_content py-2">
+
+                <!-- start Container phòng trống -->
+                <section>
+                    <div class="body_content-title flex gap-3">
+                        <h3 class="text-lg font-[600] text-black">Phòng trống
+                            <span class="font-[500] text-[var(--color-menu-icon-)]">(2)</span>
+                        </h3>
+                        <span class="body_content-line relative flex-1"></span>
+                    </div>
+                    <div
+                        class="body_content-room grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 gap-3">
+
+                        <!-- start Room Item-->
+                        <section
+                            class="room-item room-item-empty duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] bg-white rounded-xl w-[100%] h-[160px]">
+                            <p class="text-white p-2 text-center rounded-t-xl">Sea view
+                            </p>
+                            <div class="p-3 relative">
+                                <div class="flex mb-1 justify-between">
+                                    <div
+                                        class="center bg-[var(--ht-body-bg-)] rounded-full px-2 py-[3px] text-xs gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                                        </svg>
+                                        Sạch
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        style="fill: var(--ht-neutral-300-);cursor: pointer;"
+                                        class="rounded-full hover:bg-[var(--ht-body-bg-)] duration-200">
+                                        <path
+                                            d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xl font-[700] text-black truncate">P.201</h1>
+                            </div>
+                        </section>
+                        <!-- end Room Item-->
+
+                        <!-- start Room Item-->
+                        <section
+                            class="room-item room-item-empty duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] bg-white rounded-xl w-[100%] h-[160px]">
+                            <p class="text-white p-2 text-center rounded-t-xl">Sea view
+                            </p>
+                            <div class="p-3 relative">
+                                <div class="flex mb-1 justify-between">
+                                    <div
+                                        class="center bg-[var(--ht-body-bg-)] rounded-full px-2 py-[3px] text-xs gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                                        </svg>
+                                        Sạch
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        style="fill: var(--ht-neutral-300-);cursor: pointer;"
+                                        class="rounded-full hover:bg-[var(--ht-body-bg-)] duration-200">
+                                        <path
+                                            d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xl font-[700] text-black truncate">P.201</h1>
+                            </div>
+                        </section>
+                        <!-- end Room Item-->
+
+                    </div>
+                </section>
+                <!-- end Container phòng trống -->
+
+                <!-- start Container khách đi hôm nay -->
+                <section>
+                    <div class="body_content-title flex gap-3">
+                        <h3 class="text-lg font-[600] text-black">Khách đi hôm nay
+                            <span class="font-[500] text-[var(--color-menu-icon-)]">(1)</span>
+                        </h3>
+                        <span class="body_content-line relative flex-1"></span>
+                    </div>
+                    <div
+                        class="body_content-room grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 gap-3">
+
+                        <!-- start Room Item-->
+                        <section
+                            class="room-item room-item-out-of-service duration-300 cursor-pointer border relative border-[var(--ht-neutral-100-)] bg-white rounded-xl w-[100%] h-[160px]">
+                            <p class="text-white p-2 text-center rounded-t-xl">
+                                Family</p>
+                            <div class="p-3">
+                                <div class="flex mb-1 justify-between">
+                                    <div
+                                        class="center bg-[var(--room-dirty-color-200-)] text-[var(--room-dirty-color-)] rounded-full px-2 py-[3px] text-xs gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            viewBox="0 0 576 512" style="fill: var(--room-dirty-color-);">
+                                            <path
+                                                d="M566.6 54.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192-34.7-34.7c-4.2-4.2-10-6.6-16-6.6c-12.5 0-22.6 10.1-22.6 22.6l0 29.1L364.3 320l29.1 0c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16l-34.7-34.7 192-192zM341.1 353.4L222.6 234.9c-42.7-3.7-85.2 11.7-115.8 42.3l-8 8C76.5 307.5 64 337.7 64 369.2c0 6.8 7.1 11.2 13.2 8.2l51.1-25.5c5-2.5 9.5 4.1 5.4 7.9L7.3 473.4C2.7 477.6 0 483.6 0 489.9C0 502.1 9.9 512 22.1 512l173.3 0c38.8 0 75.9-15.4 103.4-42.8c30.6-30.6 45.9-73.1 42.3-115.8z" />
+                                        </svg>
+                                        Chưa dọn
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        style="fill: var(--ht-neutral-300-);cursor: pointer;"
+                                        class="rounded-full hover:bg-[var(--ht-body-bg-)] duration-200">
+                                        <path
+                                            d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xl font-[700] text-black truncate">P.201</h1>
+                                <div class="flex absolute bottom-3">
+                                    <div
+                                        class="center time-check-out bg-opacity-3 text-white rounded-full px-2 py-[3px] text-xs gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                                            <path
+                                                d="M12.25 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zM18 13h-6.75V6h2v5H18v2z">
+                                            </path>
+                                        </svg>
+                                        03/04/ 20:08 - 04/04 12:00
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end Room Item-->
+
+                    </div>
+                </section>
+                <!-- end Container khách đi hôm nay -->
+
+                <!-- start Container khách ở qua ngày -->
+                <section>
+                    <div class="body_content-title flex gap-3">
+                        <h3 class="text-lg font-[600] text-black">Khách ở qua ngày
+                            <span class="font-[500] text-[var(--color-menu-icon-)]">(2)</span>
+                        </h3>
+                        <span class="body_content-line relative flex-1"></span>
+                    </div>
+                    <div
+                        class="body_content-room grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 py-3 gap-3">
+
+                        <!-- start Room Item-->
+                        <section
+                            class="room-item room-item-occupied duration-300 cursor-pointer border relative border-[var(--ht-neutral-100-)] bg-white rounded-xl w-[100%] h-[160px]">
+                            <p class="text-white p-2 text-center rounded-t-xl">
+                                Family</p>
+                            <div class="p-3">
+                                <div class="flex mb-1 justify-between">
+                                    <div
+                                        class="center bg-[var(--room-dirty-color-200-)] text-[var(--room-dirty-color-)] rounded-full px-2 py-[3px] text-xs gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            viewBox="0 0 576 512" style="fill: var(--room-dirty-color-);">
+                                            <path
+                                                d="M566.6 54.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192-34.7-34.7c-4.2-4.2-10-6.6-16-6.6c-12.5 0-22.6 10.1-22.6 22.6l0 29.1L364.3 320l29.1 0c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16l-34.7-34.7 192-192zM341.1 353.4L222.6 234.9c-42.7-3.7-85.2 11.7-115.8 42.3l-8 8C76.5 307.5 64 337.7 64 369.2c0 6.8 7.1 11.2 13.2 8.2l51.1-25.5c5-2.5 9.5 4.1 5.4 7.9L7.3 473.4C2.7 477.6 0 483.6 0 489.9C0 502.1 9.9 512 22.1 512l173.3 0c38.8 0 75.9-15.4 103.4-42.8c30.6-30.6 45.9-73.1 42.3-115.8z" />
+                                        </svg>
+                                        Chưa dọn
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        style="fill: var(--ht-neutral-300-);cursor: pointer;"
+                                        class="rounded-full hover:bg-[var(--ht-body-bg-)] duration-200">
+                                        <path
+                                            d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h1 class="text-xl font-[700] text-black truncate">P.201</h1>
+                                <div class="flex absolute bottom-3">
+                                    <div
+                                        class="center time-check-out bg-opacity-3 text-white rounded-full px-2 py-[3px] text-xs gap-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                            viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
+                                            <path
+                                                d="M12.25 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zM18 13h-6.75V6h2v5H18v2z">
+                                            </path>
+                                        </svg>
+                                        03/04/ 20:08 - 04/04 12:00
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end Room Item-->
+
+                    </div>
+                </section>
+                <!-- end Container khách ở qua ngày -->
+
+            </div>
+            <!-- end Body Content -->
+
+        </main>
+    </div>
+
+</body>
+
+</html>

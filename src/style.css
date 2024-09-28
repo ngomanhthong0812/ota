@@ -1,3 +1,37 @@
+:root {
+    --ht-body-bg-: #f0f1f3;
+    --navbar-color-: #279656;
+    --menu-item-color-: rgb(255, 255, 255);
+    --color-menu-icon-: #5d6877;
+    --room-empty-color-: #279656;
+    --room-booked-color-: #1877F2;
+    --room-not-arrived-color-: #d147a3;
+    --room-occupied-color-: #005254;
+    --room-out-of-service-color-: #f80;
+    --room-dirty-color-: #c00;
+
+    --room-empty-color-200-: #54ca85;
+    --room-empty-color-100-: #bdf6d4;
+
+    --room-booked-color-200-: #3a99e6;
+    --room-booked-color-100-: #90bfff;
+
+    --room-not-arrived-color-200-: #d56db7;
+    --room-not-arrived-color-100-: #e9b3db;
+
+    --room-occupied-color-200-: #007c6e;
+    --room-occupied-color-100-: #ace7df;
+
+    --room-out-of-service-color-200-: #ffb74d;
+    --room-out-of-service-color-100-: #f4e5c4;
+
+    --room-dirty-color-200-: #ffe6e6;
+    --room-dirty-color-100-: #ffcccc;
+
+    --ht-neutral-100-: #e6e8eb;
+    --ht-neutral-300-: #aaaaaa;
+}
+
 .body_content-line::after {
     position: absolute;
     content: "";
@@ -14,12 +48,65 @@
         var(--room-empty-color-100-) 0px 1px 10px 0px;
 }
 
-.room-item-out-of-service:hover {
+.room-item-booked:hover {
     box-shadow:
-        var(--room-out-of-service-color-100-) 0px 1px 10px 0px;
+        var(--room-booked-color-100-) 0px 1px 10px 0px;
+}
+
+.room-item-not-arrived:hover {
+    box-shadow:
+        var(--room-not-arrived-color-100-) 0px 1px 10px 0px;
 }
 
 .room-item-occupied:hover {
     box-shadow:
         var(--room-occupied-color-100-) 0px 1px 10px 0px;
+}
+
+.room-item-out-of-service:hover {
+    box-shadow:
+        var(--room-out-of-service-color-100-) 0px 1px 10px 0px;
+}
+
+
+.room-item-empty>p {
+    background-color: var(--room-empty-color-);
+}
+
+.room-item-booked>p {
+    background-color: var(--room-booked-color-);
+}
+
+.room-item-not-arrived>p {
+    background-color: var(--room-not-arrived-color-);
+}
+
+.room-item-occupied>p {
+    background-color: var(--room-occupied-color-);
+}
+
+.room-item-out-of-service>p {
+    background-color: var(--room-out-of-service-color-);
+}
+
+
+
+.room-item-empty .time-check-out {
+    background-color: var(--room-empty-color-200-);
+}
+
+.room-item-booked .time-check-out {
+    background-color: var(--room-booked-color-200-);
+}
+
+.room-item-not-arrived .time-check-out {
+    background-color: var(--room-not-arrived-color-200-);
+}
+
+.room-item-occupied .time-check-out {
+    background-color: var(--room-occupied-color-200-);
+}
+
+.room-item-out-of-service .time-check-out {
+    background-color: var(--room-out-of-service-color-200-);
 }
