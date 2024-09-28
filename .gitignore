@@ -1,12 +1,2 @@
-<<<<<<< HEAD
 /node_modules
 /dist
-=======
-
-node_modules
-build
-npm-debug.log
-.env
-.DS_Store
-dist
->>>>>>> aaa3e0c (thanh toan)
