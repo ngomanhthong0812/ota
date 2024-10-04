@@ -16,7 +16,7 @@ body svg {
 }
 
 .menu-item-container {
-    @apply bg-[var(--menu-item-color-)] fixed left-0 top-[50px] h-full w-[200px]
+    @apply bg-[var(--menu-item-color-)] fixed left-0 top-[50px] h-full w-[200px];
 }
 
 .menu-item {
@@ -38,6 +38,25 @@ body svg {
 .menu-item-container .active svg {
     @apply fill-[var(--navbar-color-)]
 }
+
+/* menu toggle */
+.menu-item-container_toggle {
+    @apply w-11;
+}
+
+.menu-item-container_toggle .btn-menu_toggle {
+    @apply w-11;
+}
+
+.menu-item-container_toggle~.container-body {
+    @apply ml-11;
+}
+
+.menu-item-container_toggle ul li .menu-item span {
+    @apply hidden;
+}
+
+/* menu toggle */
 
 .center {
     @apply flex items-center justify-center
@@ -74,9 +93,35 @@ body svg {
 }
 
 .status-item {
-    @apply flex gap-1 items-center justify-center border-[1.5px] font-[600] px-2 py-[3px] rounded-full whitespace-nowrap
+    @apply flex gap-1 items-center justify-center border-[1.5px] font-[600] px-2 py-[3px] rounded-full whitespace-nowrap select-none
 }
 
 .toolbar-top-type .active {
     @apply text-[var(--navbar-color-)] bg-white;
+}
+
+.toolbar-top-type_item {
+    @apply p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 select-none;
+}
+
+
+
+.popup-container {
+    @apply absolute hidden w-56 bg-white shadow-lg border border-[var(--ht-neutral-100-)] z-50 rounded-lg;
+}
+
+.popup-container ul:not(:last-child) {
+    @apply border-[var(--ht-neutral-100-)] border-b-[1px]
+}
+
+.popup-container ul {
+    @apply list-none p-2 m-0;
+}
+
+.popup-container ul .popup-item {
+    @apply p-2 flex items-center gap-2 font-[400] text-sm text-[var(--color-menu-icon-)] cursor-pointer rounded-lg hover:bg-[var(--ht-neutral-100-)] duration-100;
+}
+
+.popup-container .popup-item svg {
+    @apply w-[15px] h-[15px] fill-[var(--color-menu-icon-)];
 }
