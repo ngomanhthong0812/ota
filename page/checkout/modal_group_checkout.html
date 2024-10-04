@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+    <link href="../../src/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="modal fixed top-0 bottom-0 left-0 right-0 z-20 flex items-center justify-center bg-black bg-opacity-40">
+        <div class="modal-container w-80 h-auto px-4 py-3 bg-white rounded-xl ">
+            <div class="p-6 max-w-lg mx-auto bg-white rounded-lg shadow-md">
+                <!-- Tựa đề -->
+                <h3 class="text-lg font-semibold text-gray-700 mb-4">Thanh toán</h3>
+              
+                <!-- Các lựa chọn -->
+                <div class="mb-4">
+                  <label class="inline-flex items-center mr-4">
+                    <input type="radio" name="paymentOption" value="payment" class="form-radio text-blue-500" checked>
+                    <span class="ml-2 text-gray-700">Thanh toán</span>
+                  </label>
+                  <label class="inline-flex items-center">
+                    <input type="radio" name="paymentOption" value="refund" class="form-radio text-blue-500">
+                    <span class="ml-2 text-gray-700">Hoàn tiền</span>
+                  </label>
+                </div>
+              
+                <!-- Hình thức thanh toán -->
+                <div class="mb-4">
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Hình thức TT</label>
+                  <select class="block w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring focus:border-blue-300">
+                    <option>Tiền mặt</option>
+                    <option>Chuyển khoản</option>
+                    <option>Thẻ tín dụng</option>
+                  </select>
+                </div>
+              
+                <!-- Tiền tệ và Số tiền -->
+                <div class="grid grid-cols-3 gap-4 mb-4">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Tiền tệ</label>
+                    <select class="block w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring focus:border-blue-300">
+                      <option>VND</option>
+                      <option>USD</option>
+                      <option>EUR</option>
+                    </select>
+                  </div>
+                  <div class="col-span-2">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Số tiền</label>
+                    <input type="text" value="860,000" class="block w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring focus:border-blue-300" readonly>
+                  </div>
+                </div>
+              
+                <!-- Ghi chú -->
+                <div class="mb-4">
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Note</label>
+                  <input type="text" placeholder="Nhập ghi chú" class="block w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring focus:border-blue-300">
+                </div>
+              
+                <!-- Nút hành động -->
+                <div class="flex justify-between">
+                  <button class="text-blue-500 hover:text-blue-600 font-medium">Bỏ qua</button>
+                  <button class="flex items-center px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600">
+                    <span class="mr-2">$</span> Thanh toán
+                  </button>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+</body>
+</html>

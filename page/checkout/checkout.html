@@ -165,18 +165,23 @@
 
         <main class="ml-[200px] mt-[50px] w-[100%] p-3 text-sm text-[var(--color-menu-icon-)]">
             <div class="">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <div class="px-4 py-3 font-normal text-blue-400 bg-white">
-                            <button><span><a href="#">Phòng</a></span></button>
-                        </div>
-            
-                        <div class="px-4 py-3 font-normal text-blue-400 bg-white border-b-2 border-blue-400">
-                            <button><span><a href="#">Thanh toán</a></span></button>
+                <div class="toolbar-top bg-white rounded-md p-2 flex items-center justify-between text-xs border border-[var(--ht-neutral-100-)]">
+                    <div class=" flex flex-col gap-3">
+                        <div class="flex toolbar-top-type">
+                            <div class="bg-[var(--ht-body-bg-)] flex rounded-3xl p-1 font-[600]">
+                                <button
+                                    class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 ">
+                                    Phòng
+                                </button>
+                                <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 active">
+                                    Thanh toán
+                                </button>
+                                
+                            </div>
                         </div>
                     </div>
-        
-                    <div class="flex items-center gap-5 px-6">
+
+                    <div class="flex items-center gap-5 px-6 text-base">
                         <div><i class='bx bxs-user'></i></div>
                         <div><span>#3</span></div>
                         <div><span>Còn lại 0 VND</span></div>
@@ -185,20 +190,21 @@
                         <div><i class='bx bxs-printer' ></i></div>
                     </div>
                 </div>
+                <!-- end Toolbar Top -->
         
                 <div class="flex flex-wrap">
-                    <div class="bg-white basis-[100%] md:basis-[55%] p-6 border-r border-[#ccc]">
+                    <div class="bg-white basis-[100%] md:basis-[55%] p-6 border-r border-[#ddd]">
                         <div class="flex items-center justify-between gap-x-6">
                             <button class="w-1/2 py-1 font-medium text-white bg-blue-400 rounded-md"><span><a href="#">Đến hiện tại</a></span></button>
-                            <button class="w-1/2 py-1 text-blak bg-[#ccc] rounded-md font-medium"><span><a href="#">Đến khi trả phòng</a></span></button>
+                            <button class="w-1/2 py-1 text-blak bg-[#ddd] rounded-md font-medium"><span><a href="#">Đến khi trả phòng</a></span></button>
                         </div>
         
-                        <div class="flex items-center justify-between text-black text-2xl font-bold py-3 border-b border-[#ccc]">
+                        <div class="flex items-center justify-between text-black text-2xl font-bold py-3 border-b border-[#ddd]">
                             <p><span>Hoá đơn</span></p>
                             <p class="price"><span>1,800,350 VND</span></p>
                         </div>
         
-                        <div class="grid grid-cols-4 py-3 border-b border-[#ccc]">
+                        <div class="grid grid-cols-4 py-3 border-b border-[#ddd]">
                             <div class="col-span-1">
                                 <p><span>Tiền phòng</span></p>
                             </div>
@@ -210,16 +216,16 @@
                             <div class="col-span-1 text-right">300</div>
                         </div>
         
-                        <div class="text-left py-3 border-b border-[#ccc]">
+                        <div class="text-left py-3 border-b border-[#ddd]">
                             <div>
-                                <button class="flex items-center text-base font-medium text-blue-400">
+                                <button class="flex items-center text-base font-medium text-blue-400 js-service-btn">
                                     <i class='bx bx-plus'></i>
                                     <p><span>Dịch vụ</span></p>
                                 </button>   
                             </div>
                         </div>
         
-                        <div class="grid grid-cols-4 py-3 border-b border-[#ccc]">
+                        <div class="grid grid-cols-4 py-3 border-b border-[#ddd]">
                             <div class="col-span-1 text-base font-medium text-blue-400">
                                 <p><span>Giảm giá</span></p>
                             </div>
@@ -345,6 +351,8 @@
 
         </main>
     </div>
+
+    
 
 </body>
 

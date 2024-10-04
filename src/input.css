@@ -125,3 +125,4 @@ body svg {
 .popup-container .popup-item svg {
     @apply w-[15px] h-[15px] fill-[var(--color-menu-icon-)];
 }
+
