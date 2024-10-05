@@ -100,8 +100,12 @@ body svg {
     @apply text-[var(--navbar-color-)] bg-white;
 }
 
+.toolbar-top-room-detail .active {
+    @apply text-[var(--navbar-color-)] bg-[var(--ht-body-bg-)];
+}
+
 .toolbar-top-type_item {
-    @apply p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 select-none;
+    @apply flex items-center justify-center p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 select-none;
 }
 
 
@@ -126,3 +130,46 @@ body svg {
     @apply w-[15px] h-[15px] fill-[var(--color-menu-icon-)];
 }
 
+/* nguyen */
+.btn {
+    @apply block w-full border p-2 text-gray-500 border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)]
+}
+
+
+.date-time {
+    @apply text-black text-[10px] outline-none bg-white p-2 w-[49%] rounded border border-gray-300;
+}
+
+.bottom-line {
+    @apply border-b border-stone-300 pb-4;
+}
+
+.right-line {
+    @apply border-r border-stone-600 pb-4
+}
+
+.title-info {
+    @apply uppercase bottom-line p-2 text-base text-black font-medium
+}
+
+.btn-tx-black {
+    @apply block w-full border p-2 text-black border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)];
+}
+
+/* nguyen */
+.checkout-body svg,
+.room-detail-body svg {
+    @apply w-[15px] h-[15px] fill-[var(--color-menu-icon-)]
+}
+
+.btn-fn {
+    @apply flex items-center gap-2 border-none rounded-md py-2 px-4
+}
+
+.checkout-detail:hover .price {
+    @apply hidden
+}
+
+.checkout-detail:hover .select {
+    @apply flex
+}
