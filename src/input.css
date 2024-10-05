@@ -163,13 +163,13 @@ body svg {
 }
 
 .btn-fn {
-    @apply flex items-center gap-2 border-none rounded-md py-2 px-4
+    @apply flex items-center gap-2 border-none rounded-md py-2 px-4;
 }
 
 .checkout-detail:hover .price {
-    @apply hidden
+    @apply hidden;
 }
 
 .checkout-detail:hover .select {
-    @apply flex
+    @apply flex;
 }
