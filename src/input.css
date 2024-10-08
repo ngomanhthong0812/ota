@@ -100,8 +100,12 @@ body svg {
     @apply text-[var(--navbar-color-)] bg-white;
 }
 
+.toolbar-top-room-detail .active {
+    @apply text-[var(--navbar-color-)] bg-[var(--ht-body-bg-)];
+}
+
 .toolbar-top-type_item {
-    @apply p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 select-none;
+    @apply flex items-center justify-center p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 select-none;
 }
 
 
@@ -125,5 +129,4 @@ body svg {
 .popup-container .popup-item svg {
     @apply w-[15px] h-[15px] fill-[var(--color-menu-icon-)];
 }
-
 

@@ -163,70 +163,112 @@
         </nav>
         <!-- end menu -->
 
-        <main class="ml-[200px] mt-[50px] w-[100%] p-3 text-sm text-[var(--color-menu-icon-)]">
+        <main class="ml-[200px] mt-[50px] w-[100%] p-3 text-sm text-[var(--color-menu-icon-)] checkout-body">
             <div class="">
-                <div class="toolbar-top bg-white rounded-md p-2 flex items-center justify-between text-xs border border-[var(--ht-neutral-100-)]">
-                    <div class=" flex flex-col gap-3">
-                        <div class="flex toolbar-top-type">
-                            <div class="bg-[var(--ht-body-bg-)] flex rounded-3xl p-1 font-[600]">
+                <!-- start Toolbar Top -->
+                <div class="toolbar-top rounded-t-md pb-2 flex items-center justify-between text-xs">
+                    <div class=" flex flex-col gap-3 ">
+                        <div class="flex toolbar-top-room-detail">
+                            <div class="flex rounded-3xl p-1 font-[600] bg-white">
                                 <button
                                     class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 ">
                                     Phòng
                                 </button>
-                                <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 active">
+                                <button
+                                    class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 active">
                                     Thanh toán
                                 </button>
-                                
+
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-5 px-6 text-base">
-                        <div><i class='bx bxs-user'></i></div>
+                    <div class="flex items-center gap-4 text-base">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 14px; height:14px;"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                            </svg>
+                        </div>
                         <div><span>#3</span></div>
                         <div><span>Còn lại 0 VND</span></div>
-                        <div><i class='bx bxs-bell'></i></div>
-                        <div><i class='bx bxs-envelope'></i></div>
-                        <div><i class='bx bxs-printer' ></i></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height:16px;"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height:16px;"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 14px; height:14px;"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <!-- end Toolbar Top -->
-        
-                <div class="flex flex-wrap">
-                    <div class="bg-white basis-[100%] md:basis-[55%] p-6 border-r border-[#ddd]">
-                        <div class="flex items-center justify-between gap-x-6">
-                            <button class="w-1/2 py-1 font-medium text-white bg-blue-400 rounded-md"><span><a href="#">Đến hiện tại</a></span></button>
-                            <button class="w-1/2 py-1 text-blak bg-[#ddd] rounded-md font-medium"><span><a href="#">Đến khi trả phòng</a></span></button>
+
+                <div class="flex flex-wrap bg-white p-3 rounded-md">
+                    <div class="basis-[100%] md:basis-[55%] pr-3">
+                        <div class="flex items-center justify-between gap-1 ">
+                            <button class="w-1/2 py-2 font-medium text-white bg-green-400 rounded-md"><span><a
+                                        href="#">Đến hiện tại</a></span></button>
+                            <button class="w-1/2 py-2 text-blak bg-[var(--ht-body-bg-)] rounded-md font-medium"><span><a
+                                        href="#">Đến
+                                        khi trả phòng</a></span></button>
                         </div>
-        
-                        <div class="flex items-center justify-between text-black text-2xl font-bold py-3 border-b border-[#ddd]">
+
+                        <div
+                            class="flex items-center justify-between text-black text-xl font-bold py-3 border-b !border-[var(--ht-neutral-100-)]">
                             <p><span>Hoá đơn</span></p>
                             <p class="price"><span>1,800,350 VND</span></p>
                         </div>
-        
-                        <div class="grid grid-cols-4 py-3 border-b border-[#ddd]">
+
+                        <div class="grid grid-cols-4 py-3 border-b !border-[var(--ht-neutral-100-)]">
                             <div class="col-span-1">
                                 <p><span>Tiền phòng</span></p>
                             </div>
-                            <div class="flex flex-col col-span-2">
-                                <p><span>Giá đêm (03/04 21:00 - 04/04 12:00)</span></p>
-                                <p><span>Giá đêm (03/04 21:00 - 04/04 12:00)</span></p>
-                                <p><span>Nhận phòng sớm (49 phút)</span></p>
+                            <div class="flex flex-col col-span-3">
+                                <div class="flex justify-between py-1"><span>Giá đêm (03/04 21:00 - 04/04 12:00)</span>
+                                    <div>300,000</div>
+                                </div>
+                                <div class="flex justify-between py-1"><span>Giá đêm (03/04 21:00 - 04/04 12:00)</span>
+                                    <div>300,000</div>
+                                </div>
+                                <div class="flex justify-between py-1"><span>Nhận phòng sớm (49 phút)</span>
+                                    <div>50,000</div>
+                                </div>
                             </div>
-                            <div class="col-span-1 text-right">300</div>
                         </div>
-        
-                        <div class="text-left py-3 border-b border-[#ddd]">
+
+                        <div class="text-left py-3 border-b !border-[var(--ht-neutral-100-)]">
                             <div>
-                                <button class="flex items-center text-base font-medium text-blue-400 js-service-btn">
-                                    <i class='bx bx-plus'></i>
+                                <button class="flex gap-1 items-center font-medium text-green-400 js-service-btn">
+                                    <svg class="mt-[2.5px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M5 12h14m-7 7V5">
+                                        </path>
+                                    </svg>
                                     <p><span>Dịch vụ</span></p>
-                                </button>   
+                                </button>
                             </div>
                         </div>
-        
-                        <div class="grid grid-cols-4 py-3 border-b border-[#ddd]">
-                            <div class="col-span-1 text-base font-medium text-blue-400">
+
+                        <div class="grid grid-cols-4 py-3 border-b !border-[var(--ht-neutral-100-)]">
+                            <div class="col-span-1 font-medium text-green-400">
                                 <p><span>Giảm giá</span></p>
                             </div>
                             <div class="flex flex-col col-span-2">
@@ -236,114 +278,169 @@
                                 <p><span>0</span></p>
                             </div>
                         </div>
-        
-                        <div class="text-left py-3 border-b border-[#ccc]">
+
+                        <div class="text-left py-3 border-b !border-[var(--ht-neutral-100-)]">
                             <div class="flex items-center gap-2">
                                 <input type="checkbox" class="w-4 h-4">
-                                <p><span>Thuế/Phí</span></p> 
+                                <p><span>Thuế/Phí</span></p>
                             </div>
                         </div>
-        
-                        <div class="grid grid-cols-4 py-3">
+
+                        <div class="grid grid-cols-4 pb-3">
                             <div class="col-span-1">
-                                
+
                             </div>
                             <div class="flex flex-col col-span-3 font-medium text-black">
                                 <div>
-                                    <div class="flex items-center justify-between py-2 border-b border-[#ccc]">
+                                    <div
+                                        class="flex items-center justify-between py-2 border-b !border-[var(--ht-neutral-100-)]">
                                         <p><span>Cần thanh toán</span></p>
                                         <p><span>0</span></p>
                                     </div>
-                                    
-                                    <div class="flex items-center justify-between py-2 border-b border-[#ccc]">
+
+                                    <div
+                                        class="flex items-center justify-between py-2 border-b !border-[var(--ht-neutral-100-)]">
                                         <p><span>Đã thanh toán</span></p>
                                         <p><span>0</span></p>
                                     </div>
-        
-                                    <div class="flex items-center justify-between py-2 border-b border-[#ccc]">
+
+                                    <div
+                                        class="flex items-center justify-between py-2 border-b !border-[var(--ht-neutral-100-)]">
                                         <p><span>Còn lại</span></p>
                                         <p><span>0</span></p>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
-        
-                    <div class="bg-white flex-1 md: col-span-2 p-6 border-l border-[#ccc]">
-                        <div class="flex justify-end border-b border-[#ccc] pb-2">
-                            <button class="min-w-[135px] flex items-center gap-2 bg-pink-200 rounded-md py-1 px-4 text-pink-500 font-medium ">
-                                <i class='text-xl bx bx-exit' ></i>
+
+                    <div class="flex-1 md: col-span-2 border-l !border-[var(--ht-neutral-100-)] pl-3">
+                        <div class="flex justify-end border-b !border-[var(--ht-neutral-100-)] pb-2">
+                            <button
+                                class="btn-fn bg-[var(--room-not-arrived-color-100-)] text-[var(--room-not-arrived-color-)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    style="fill: var(--room-not-arrived-color-); margin-top: 1px;">
+                                    <path
+                                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z">
+                                    </path>
+                                </svg>
                                 <p><span>Trả phòng</span></p>
                             </button>
                         </div>
-        
+
                         <div class="flex items-center gap-6 py-2 font-medium text-black">
                             <div class="flex items-center gap-2">
-                                <input type="radio" class="w-4 h-4">
+                                <input type="radio" name="payment-option" checked class="w-4 h-4">
                                 <p><span>Thanh toán</span></p>
                             </div>
-        
+
                             <div class="flex items-center gap-2">
-                                <input type="radio" class="w-4 h-4">
+                                <input type="radio" name="payment-option" class="w-4 h-4">
                                 <p><span>Hoàn tiền</span></p>
                             </div>
                         </div>
-        
+
                         <div class="grid grid-cols-3 gap-5 py-2">
                             <div class="flex flex-col col-span-1">
-                                <label for="" class="mb-1">Hìnhthức TT</label>
-        
-                                <select name="" id="" class="border border-[#ccc] rounded-md focus:outline-blue-400">
+                                <label for="" class="mb-1">Hình thức TT</label>
+
+                                <select name="" id="" class="btn">
                                     <option value="">Tiền mặt</option>
                                     <option value="">Thẻ tín dụng</option>
                                     <option value="">Chuyển khoản NH</option>
                                     <option value="">Công nợ</option>
                                 </select>
                             </div>
-        
+
                             <div class="flex flex-col col-span-1">
                                 <label for="" class="mb-1">Tiềntệ</label>
-        
-                                <select name="" id="" class="border border-[#ccc] rounded-md focus:outline-blue-400">
+
+                                <select name="" id="" class="btn">
                                     <option value="">VND</option>
                                     <option value="">USD</option>
                                 </select>
                             </div>
-        
+
                             <div class="flex flex-col col-span-1">
                                 <label for="" class="mb-1">Số tiền</label>
-        
-                                <input type="number" name="soTien" class="border border-[#ccc] rounded-md focus:outline-blue-400">
+
+                                <input type="number" name="soTien" class="btn">
                             </div>
                         </div>
-        
-                        <div class="py-2 ">
-                            <textarea name="note" id="note" rows="5" cols="50" class="w-full border border-[#ccc] rounded-md focus:outline-blue-400 px-2" placeholder="Note"></textarea>
+
+                        <div class="py-2">
+                            <textarea name="note" id="note" rows="5" cols="50" class="w-full btn px-2"
+                                placeholder="Note"></textarea>
                         </div>
-        
-                        <div class="flex justify-end border-b border-[#ccc] pb-2">
-                            <button class="min-w-[135px] flex items-center gap-2 bg-green-200 rounded-md py-1 px-4 text-green-500 font-medium ">
-                                <p><span>$</span></p>
+
+                        <div class="flex justify-end border-b !border-[var(--ht-neutral-100-)] pb-2">
+                            <button class="btn-fn bg-blue-100 text-[#60a5fa]">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                                    style="fill:#60a5fa ;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M160 0c17.7 0 32 14.3 32 32l0 35.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11l0 33.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.9c-.4-.1-.9-.1-1.3-.2l-.2 0s0 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7s0 0 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11L128 32c0-17.7 14.3-32 32-32z">
+                                    </path>
+                                </svg>
                                 <p><span>Thanh toán</span></p>
                             </button>
                         </div>
-        
-                        <div class="">
+
+                        <div class="py-2">
                             <div>
-                                <p>Đã thanh toán</p>
+                                <span class="font-medium">Đã thanh toán</span>
                             </div>
-        
-                            <div class="flex items-center justify-between border-b border-[#ccc] py-2">
-                                <div>
+
+                            <div class="border-b !border-[var(--ht-neutral-100-)] py-2 checkout-detail">
+                                <div class="flex items-center justify-between">
                                     <p>City view 102 (Tiền mặt)</p>
-                                    <span class="text-sm">16:36-07-04-2022-Test</span>
+                                    <span class="font-medium text-[#fa6060] price">-100,000 VND</span>
+                                    <div class="gap-2 select hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                            <path
+                                                d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                                        </svg>
+                                        <button
+                                            class="bg-[var(--room-dirty-color-100-)] border-none rounded-full p-[1px]">
+                                            <svg class=" text-[var(--room-dirty-color-)] dark:text-white"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                style="width: 12px; height: 12px;" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M6 18 17.94 6M18 18 6.06 6"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
-        
-                                <div>
-                                    <span class="font-medium text-green-500">+2,750,000 VND</span>
-                                </div>
+                                <p class="text-xs text-[#8a8a8a]">16:36-07-04-2022-Test</p>
+                                <p class="text-xs text-[#8a8a8a]">Khach tim duoc the phong</p>
                             </div>
+                            <div class="border-b !border-[var(--ht-neutral-100-)] py-2 checkout-detail">
+                                <div class="flex items-center justify-between">
+                                    <p>City view 102 (Tiền mặt)</p>
+                                    <span class="font-medium text-[#60a5fa] price">+2,750,000 VND</span>
+                                    <div class="gap-2 select hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                            <path
+                                                d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                                        </svg>
+                                        <button
+                                            class="bg-[var(--room-dirty-color-100-)] border-none rounded-full p-[1px]">
+                                            <svg class=" text-[var(--room-dirty-color-)] dark:text-white"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                style="width: 12px; height: 12px;" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M6 18 17.94 6M18 18 6.06 6"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-[#8a8a8a]">16:36-07-04-2022-Test</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -352,7 +449,6 @@
         </main>
     </div>
 
-    
 
 </body>
 
