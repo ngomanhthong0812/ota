@@ -13,16 +13,14 @@
     <header class="bg-[var(--navbar-color-)] flex justify-between p-2 h-[50px] fixed w-full text-white z-10">
         <div class="logo flex items-center flex-1">
             <div class="w-[200px] flex items-center gap-2">
-                <img src="https://i0.wp.com/www.writefromscratch.com/wp-content/uploads/2018/12/demo-logo.png?fit=539%2C244&ssl=1&w=640"
-                    alt="logo" width="80" height="80">
+                <img src="https://i0.wp.com/www.writefromscratch.com/wp-content/uploads/2018/12/demo-logo.png?fit=539%2C244&ssl=1&w=640" alt="logo" width="80" height="80">
                 <div class="hotel-name font-[500]">
                     Demo
                 </div>
             </div>
             <div class="search relative flex-1">
                 <input type="text" placeholder="Tìm kiếm..." class="w-full rounded-md px-6 py-2 text-sm text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                    style="fill: rgb(193, 193, 193);" class="absolute top-[50%] translate-y-[-45%] left-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="fill: rgb(193, 193, 193);" class="absolute top-[50%] translate-y-[-45%] left-1">
                     <path
                         d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
                     </path>
@@ -155,15 +153,12 @@
 
         <main class="ml-[200px] mt-[50px] w-[100%] p-3 text-sm text-[var(--color-menu-icon-)] toolbar-top-type">
             <!-- start Toolbar Top -->
-            <div
-                class="toolbar-top bg-white rounded-md p-2 flex gap-2 border border-[var(--ht-neutral-100-)] items-center justify-center">
+            <div class="toolbar-top bg-white rounded-md p-2 flex gap-2 border border-[var(--ht-neutral-100-)] items-center justify-center">
                 <div class="bg-[var(--ht-body-bg-)] flex rounded-3xl p-1 font-[600]">
-                    <button
-                        class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 btn-toggle active">
+                    <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 btn-toggle active">
                         Thông tin
                     </button>
-                    <button
-                        class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 btn-toggle">
+                    <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 btn-toggle">
                         Phòng
                     </button>
                 </div>
@@ -175,7 +170,7 @@
 
                 // Lặp qua tất cả các nút và thêm sự kiện click
                 buttons.forEach(button => {
-                    button.addEventListener('click', function () {
+                    button.addEventListener('click', function() {
                         // Xóa class 'active' khỏi tất cả các nút
                         buttons.forEach(btn => btn.classList.remove('active'));
 
@@ -184,7 +179,6 @@
                     });
                 });
             </script>
-
             <!-- end Toolbar Top -->
 
             <!-- start Body Content -->
@@ -192,18 +186,14 @@
 
                 <!-- start Container phòng trống -->
                 <section>
-                    <div
-                        class="body_content-room grid grid-cols-1 grid-rows-none sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-10 xl:grid-cols-10 2xl:grid-cols-10 gap-3">
+                    <div class="body_content-room grid grid-cols-1 grid-rows-none sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-10 xl:grid-cols-10 2xl:grid-cols-10 gap-3">
                         <div class="col-span-6 gap-5">
-                            <section
-                                class=" mb-3 duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md relative  bg-white   w-[100%] h-[50px]">
+                            <section class=" mb-3 duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md relative  bg-white   w-[100%] h-[50px]">
                                 <!-- start info order -->
                                 <div class=" grid grid-cols-12 px-3 mt-1 ">
 
                                     <div class="flex gap-2 col-span-10 items-center">
-                                        <input type="datetime-local" id="check-in"
-                                            class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[28%] rounded"
-                                            placeholder="Ngày giờ đặt phòng" />
+                                        <input type="datetime-local" id="check-in" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[28%] rounded" placeholder="Ngày giờ đặt phòng" />
                                         <span class="flex justify-center items-center  font-semibold text-[12px] ">
                                             <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14"
                                                 viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -211,14 +201,11 @@
                                                     d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                                             </svg>
                                         </span>
-                                        <input type="datetime-local" id="check-0ut"
-                                            class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[28%] rounded"
-                                            placeholder="Ngày giờ đặt phòng" />
+                                        <input type="datetime-local" id="check-0ut" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[28%] rounded" placeholder="Ngày giờ đặt phòng" />
                                     </div>
 
                                     <div class="flex col-span-2 justify-end items-center ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15"
-                                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                             <path fill="#74C0FC"
                                                 d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
                                         </svg>
@@ -230,9 +217,9 @@
                                 <!-- end info Guest-->
 
                             </section>
+
                             <!-- Right-order -->
-                            <section
-                                class=" duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md  bg-white  w-[100%] h-[515px]  ">
+                            <section class=" duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md  bg-white  w-[100%] h-[515px]  ">
                                 <!-- Header -->
                                 <div class="flex border-b border-stone-300 pb-4 p-3 px-3 gap-6 font-medium">
                                     <div class="w-2/12 ">
@@ -251,6 +238,7 @@
                                         <p>Khách</p>
                                     </div>
                                 </div>
+
                                 <!-- Standard -->
                                 <div class="flex border-b border-stone-200 gap-6 py-4 px-3 text-black ">
                                     <div class=" w-2/12 flex justify-start items-center">
@@ -260,25 +248,22 @@
                                     <div class="flex items-center w-4/12 gap-2 number-group">
                                         <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
                                             <!-- Minus button -->
-                                            <button
-                                                class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
+                                            <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
                                                     viewBox="0 0 448 512">
-                                                    <path fill="#4c91c2"
+                                                    <path fill="#279656"
                                                         d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
                                                 </svg>
                                             </button>
 
                                             <!-- Number input -->
-                                            <input type="text" value="1"
-                                                class="numberInput w-9 text-center border-0 focus:ring-0">
+                                            <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
 
                                             <!-- Plus button -->
-                                            <button
-                                                class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
+                                            <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
                                                     viewBox="0 0 448 512">
-                                                    <path fill="#4c91c2"
+                                                    <path fill="#279656"
                                                         d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                                                 </svg>
                                             </button>
@@ -290,8 +275,7 @@
                                     </div>
                                     <div class="w-2/12">
                                         <div class="w-[120px]">
-                                            <select id="room" name="room"
-                                                class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
+                                            <select id="room" name="room" class="btn-loaigia ">
                                                 <option value="FR">Giá mặc định</option>
                                                 <option value="US">404</option>
                                                 <option value="JP">405</option>
@@ -304,14 +288,12 @@
 
                                     <div class="w-2/12  flex  items-center ">
                                         <div class="flex justify-center items-center gap-1 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                                viewBox="0 0 448 512">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
                                                 <path fill="#a0a2a7"
                                                     d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
                                             </svg>
                                             <span class="text-black ">2</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                                viewBox="0 0 320 512">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
                                                 <path fill="#a0a2a7"
                                                     d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z" />
                                             </svg>
@@ -330,25 +312,22 @@
                                     <div class="flex items-center w-4/12 gap-2 number-group">
                                         <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
                                             <!-- Minus button -->
-                                            <button
-                                                class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
+                                            <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
                                                     viewBox="0 0 448 512">
-                                                    <path fill="#4c91c2"
+                                                    <path fill="#279656"
                                                         d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
                                                 </svg>
                                             </button>
 
                                             <!-- Number input -->
-                                            <input type="text" value="1"
-                                                class="numberInput w-9 text-center border-0 focus:ring-0">
+                                            <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
 
                                             <!-- Plus button -->
-                                            <button
-                                                class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
+                                            <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
                                                     viewBox="0 0 448 512">
-                                                    <path fill="#4c91c2"
+                                                    <path fill="#279656"
                                                         d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                                                 </svg>
                                             </button>
@@ -360,8 +339,7 @@
                                     </div>
                                     <div class="w-2/12">
                                         <div class="w-[120px]">
-                                            <select id="room" name="room"
-                                                class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
+                                            <select id="room" name="room" class="btn-loaigia ">
                                                 <option value="FR">Mặc định</option>
                                                 <option value="US">404</option>
                                                 <option value="JP">405</option>
@@ -374,14 +352,12 @@
 
                                     <div class="w-2/12  flex  items-center ">
                                         <div class="flex justify-center items-center gap-1 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                                viewBox="0 0 448 512">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
                                                 <path fill="#a0a2a7"
                                                     d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
                                             </svg>
                                             <span class="text-black ">2</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                                viewBox="0 0 320 512">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
                                                 <path fill="#a0a2a7"
                                                     d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z" />
                                             </svg>
@@ -400,25 +376,22 @@
                                     <div class="flex items-center w-4/12 gap-2 number-group">
                                         <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
                                             <!-- Minus button -->
-                                            <button
-                                                class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
+                                            <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
                                                     viewBox="0 0 448 512">
-                                                    <path fill="#4c91c2"
+                                                    <path fill="#279656"
                                                         d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
                                                 </svg>
                                             </button>
 
                                             <!-- Number input -->
-                                            <input type="text" value="1"
-                                                class="numberInput w-9 text-center border-0 focus:ring-0">
+                                            <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
 
                                             <!-- Plus button -->
-                                            <button
-                                                class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
+                                            <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
                                                     viewBox="0 0 448 512">
-                                                    <path fill="#4c91c2"
+                                                    <path fill="#279656"
                                                         d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                                                 </svg>
                                             </button>
@@ -430,8 +403,7 @@
                                     </div>
                                     <div class="w-2/12">
                                         <div class="w-[120px]">
-                                            <select id="room" name="room"
-                                                class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
+                                            <select id="room" name="room" class="btn-loaigia ">
                                                 <option value="FR">Mặc định</option>
                                                 <option value="US">404</option>
                                                 <option value="JP">405</option>
@@ -444,14 +416,12 @@
 
                                     <div class="w-2/12  flex  items-center ">
                                         <div class="flex justify-center items-center gap-1 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                                viewBox="0 0 448 512">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
                                                 <path fill="#a0a2a7"
                                                     d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
                                             </svg>
                                             <span class="text-black ">2</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                                viewBox="0 0 320 512">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
                                                 <path fill="#a0a2a7"
                                                     d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z" />
                                             </svg>
@@ -470,25 +440,22 @@
                                     <div class="flex items-center w-4/12 gap-2 number-group">
                                         <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
                                             <!-- Minus button -->
-                                            <button
-                                                class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
+                                            <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
                                                     viewBox="0 0 448 512">
-                                                    <path fill="#4c91c2"
+                                                    <path fill="#279656"
                                                         d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
                                                 </svg>
                                             </button>
 
                                             <!-- Number input -->
-                                            <input type="text" value="1"
-                                                class="numberInput w-9 text-center border-0 focus:ring-0">
+                                            <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
 
                                             <!-- Plus button -->
-                                            <button
-                                                class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
+                                            <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4"
                                                     viewBox="0 0 448 512">
-                                                    <path fill="#4c91c2"
+                                                    <path fill="#279656"
                                                         d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z" />
                                                 </svg>
                                             </button>
@@ -500,8 +467,7 @@
                                     </div>
                                     <div class="w-2/12">
                                         <div class="w-[120px]">
-                                            <select id="room" name="room"
-                                                class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
+                                            <select id="room" name="room" class="btn-loaigia ">
                                                 <option value="FR">Mặc định</option>
                                                 <option value="US">404</option>
                                                 <option value="JP">405</option>
@@ -514,14 +480,12 @@
 
                                     <div class="w-2/12  flex  items-center ">
                                         <div class="flex justify-center items-center gap-1 ">
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                                viewBox="0 0 448 512">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
                                                 <path fill="#a0a2a7"
                                                     d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
                                             </svg>
                                             <span class="text-black ">2</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                                viewBox="0 0 320 512">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
                                                 <path fill="#a0a2a7"
                                                     d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z" />
                                             </svg>
@@ -536,11 +500,9 @@
 
                         <div class="col-span-4 gap-5">
 
-                            <section
-                                class=" mb-3 duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md relative  bg-white   w-[100%] h-[50px]">
+                            <section class=" mb-3 duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md relative  bg-white   w-[100%] h-[50px]">
                                 <div class="flex justify-center border-b-8 border-[#f0f1f3] pb-0">
-                                    <button
-                                        class="w-full relative flex items-center justify-center bg-blue-500 text-white font-bold py-3 px-3 rounded-t hover:bg-blue-600">
+                                    <button class="w-full relative flex items-center justify-center bg-[#279656] text-white font-bold py-3 px-3 rounded-t hover:bg-green-600">
                                         Tiếp tục
 
                                         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
@@ -555,18 +517,12 @@
 
                             </section>
                             <!-- search-room -->
-                            <section
-                                class="  duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-b  bg-white  w-[100%] h-[515px] text-black ">
+                            <section class="  duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-b  bg-white  w-[100%] h-[515px] text-black ">
                                 <div class=" grid grid-cols-12 px-3 mt-1">
                                     <div class="flex gap-2 col-span-10 ">
-                                        <input type="datetime-local" id="check-in"
-                                            class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[42%] rounded"
-                                            placeholder="Ngày giờ đặt phòng" />
-                                        <span
-                                            class="flex justify-center items-center  font-semibold text-[12px] ">-</span>
-                                        <input type="datetime-local" id="check-0ut"
-                                            class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[42%] rounded"
-                                            placeholder="Ngày giờ đặt phòng" />
+                                        <input type="datetime-local" id="check-in" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[42%] rounded" placeholder="Ngày giờ đặt phòng" />
+                                        <span class="flex justify-center items-center  font-semibold text-[12px] ">-</span>
+                                        <input type="datetime-local" id="check-0ut" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[42%] rounded" placeholder="Ngày giờ đặt phòng" />
                                     </div>
                                     <div class="flex col-span-2 justify-end items-center">
                                         <p class="flex items-center text-black font-semibold text-[16px]">3 đêm</p>
@@ -599,14 +555,11 @@
 
                                     <div class="w-[90px] relative">
                                         <!-- Icon người dùng phía trước -->
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            class="absolute left-2 top-1/2 transform -translate-y-1/2" height="12"
-                                            width="10.5" viewBox="0 0 448 512">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2 top-1/2 transform -translate-y-1/2" height="12" width="10.5" viewBox="0 0 448 512">
                                             <path fill="#a0a2a7"
                                                 d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
                                         </svg>
-                                        <select id="country" name="country"
-                                            class="block w-full p-2  pl-8 pr-2 border border-gray-300 bg-white rounded-md shadow-sm appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                        <select id="country" name="country" class="btn-soluong">
                                             <option value="FR">2</option>
                                             <option value="US">3</option>
                                             <option value="JP">4</option>
@@ -615,15 +568,12 @@
 
                                     <div class="w-[90px] relative">
                                         <!-- Icon SVG mới phía trước -->
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            class="absolute left-2 top-1/2 transform -translate-y-1/2" height="12"
-                                            width="7.5" viewBox="0 0 320 512">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2 top-1/2 transform -translate-y-1/2" height="12" width="7.5" viewBox="0 0 320 512">
                                             <path fill="#a0a2a7"
                                                 d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z" />
                                         </svg>
 
-                                        <select id="country" name="country"
-                                            class="block w-full p-2 pl-8 pr-2 border border-gray-300 bg-white rounded-md shadow-sm appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                        <select id="country" name="country" class="btn-soluong">
                                             <option value="FR">2</option>
                                             <option value="US">3</option>
                                             <option value="JP">4</option>
@@ -639,14 +589,12 @@
 
                                 <div class="grid grid-cols-2 px-3 py-2 pb-3">
                                     <div class="flex justify-start items-center gap-2 ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                            viewBox="0 0 448 512">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
                                             <path fill="#a0a2a7"
                                                 d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
                                         </svg>
                                         <span class="text-black font-medium">2</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5"
-                                            viewBox="0 0 320 512">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
                                             <path fill="#a0a2a7"
                                                 d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z" />
                                         </svg>
@@ -675,7 +623,7 @@
                                     <div class="flex items-center">
                                         <label class="flex items-center">
                                             <input type="checkbox" id="subscribe" name="subscribe"
-                                                class="mr-2 leading-tight text-blue-600 accent-blue-600 focus:ring-blue-500">
+                                                class="checkbox-thuephi">
                                             <span class="text-xz">Thuế/Phí</span>
                                         </label>
                                     </div>
@@ -713,8 +661,7 @@
                                         <option value="US">Chuyển khoản</option>
                                     </select>
 
-                                    <input type="text" id="passport" name="passport" placeholder="0"
-                                        class="flex pl-5 py-[8px] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 placeholder:text-xs">
+                                    <input type="text" id="passport" name="passport" placeholder="0" class="btn-nhapgiathien">
                                 </div>
                                 <!-- End-thanh-toan -->
 
@@ -724,8 +671,7 @@
                                         <p class="text-base font-medium">Còn lại</p>
                                     </div>
                                     <div>
-                                        <span
-                                            class="flex justify-end text-red-500 font-semibold text-xz ">1,300,000</span>
+                                        <span class="flex justify-end text-red-500 font-semibold text-xz ">1,300,000</span>
                                     </div>
                                 </div>
 
@@ -757,12 +703,12 @@
 
                 </section>
 
-            </div>
-            <!-- end Container phòng trống -->
+                </div>
+                <!-- end Container phòng trống -->
 
-    </div>
-    <!-- end Body Content -->
-    </main>
+            </div>
+            <!-- end Body Content -->
+        </main>
 
     </div>
 
