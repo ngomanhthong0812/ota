@@ -156,7 +156,7 @@
             <div class="toolbar-top bg-white rounded-md p-2 flex gap-2 border border-[var(--ht-neutral-100-)] items-center justify-center">
                 <div class="bg-[var(--ht-body-bg-)] flex rounded-3xl p-1 font-[600]">
                     <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 btn-toggle active">
-                        Tầng
+                        Thông tin
                     </button>
                     <button class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 btn-toggle">
                         Phòng
@@ -188,453 +188,459 @@
                 <!-- start Container phòng trống -->
                 <section>
                     <div class="body_content-room grid grid-cols-1 grid-rows-none sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-10 2xl:grid-cols-2 gap-3">
+                        <div class="col-span-6 gap-5">
+                            <section class=" mb-3 duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md relative  bg-white   w-[100%] h-[50px]">
+                                <!-- start info order -->
+                                <div class=" grid grid-cols-12 px-3 mt-1 ">
 
-                        <section class="grid col-span-6 row-span-1  duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md relative  bg-white   w-[100%] h-[50px]">
-                            <!-- start info order -->
-                            <div class=" grid grid-cols-12 px-3 ">
+                                    <div class="flex gap-2 col-span-10 items-center">
+                                        <input type="datetime-local" id="check-in" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[28%] rounded" placeholder="Ngày giờ đặt phòng" />
+                                        <span class="flex justify-center items-center  font-semibold text-[12px] ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#18191b" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>   
+                                        </span>
+                                        <input type="datetime-local" id="check-0ut" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[28%] rounded" placeholder="Ngày giờ đặt phòng" />
+                                    </div>
 
-                                <div class="flex gap-2 col-span-10 ">
-                                    <input type="datetime-local" id="check-in" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[28%] rounded" placeholder="Ngày giờ đặt phòng" />
-                                    <span class="flex justify-center items-center  font-semibold text-[12px] ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#18191b" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>   
-                                    </span>
-                                    <input type="datetime-local" id="check-0ut" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[28%] rounded" placeholder="Ngày giờ đặt phòng" />
+                                    <div class="flex col-span-2 justify-end items-center ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+                                    </div>
+
                                 </div>
 
-                                <div class="flex col-span-2 justify-end items-center ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#74C0FC" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>                                    </div>
 
-                            </div>
+                                <!-- end info Guest-->
+
+                            </section>
+                            <!-- Right-order -->
+                            <section class=" duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md  bg-white  w-[100%] h-[515px]  ">
+                                <!-- Header -->
+                                <div class="flex border-b border-stone-300 pb-4 p-3 px-3 gap-6 font-medium">
+                                    <div class="w-2/12 ">
+                                        <p>Loại phòng</p>
+                                    </div>
+                                    <div class="w-4/12">
+                                        <p>Phòng (13 còn lại)</p>
+                                    </div>
+                                    <div class="w-2/12 ">
+                                        <p>Loại giá</p>
+                                    </div>
+                                    <div class=" w-2/12  justify-end flex">
+                                        <p>Giá mặc định</p>
+                                    </div>
+                                    <div class="w-2/12 flex ">
+                                        <p>Khách</p>
+                                    </div>
+                                </div>
+                                <!-- Standard -->
+                                <div class="flex border-b border-stone-200 gap-6 py-4 px-3 text-black ">
+                                    <div class=" w-2/12 flex justify-start items-center">
+                                        <p>Standard</p>
+                                    </div>
+
+                                    <div class="flex items-center w-4/12 gap-2 number-group">
+                                        <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
+                                            <!-- Minus button -->
+                                            <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
+                                                <path fill="#4c91c2" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                                            </svg>
+                                        </button>
+
+                                            <!-- Number input -->
+                                            <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
+
+                                            <!-- Plus button -->
+                                            <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
+                                                <path fill="#4c91c2" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
+                                            </svg>
+                                        </button>
+                                        </div>
+
+                                        <!-- text-->
+                                        <p>4/4 còn lại</p>
+                                        <span>*</span>
+                                    </div>
+                                    <div class="w-2/12">
+                                        <div class="w-[120px]">
+                                            <select id="room" name="room" class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
+                                            <option value="FR">Giá mặc định</option>
+                                            <option value="US">404</option>
+                                            <option value="JP">405</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/12 flex justify-end items-center ">
+                                        <p>400,000</p>
+                                    </div>
+
+                                    <div class="w-2/12  flex  items-center ">
+                                        <div class="flex justify-center items-center gap-1 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
+                                            <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                                        </svg>
+                                            <span class="text-black ">2</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
+                                        <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
+                                    </svg>
+                                            <span class="text-black ">0</span>
+                                        </div>
+                                    </div>
 
 
-                            <!-- end info Guest-->
+                                </div>
+                                <!-- City view -->
+                                <div class="flex border-b border-stone-200 gap-6 py-4 px-3 text-black ">
+                                    <div class=" w-2/12 flex justify-start items-center">
+                                        <p>City view</p>
+                                    </div>
 
-                        </section>
+                                    <div class="flex items-center w-4/12 gap-2 number-group">
+                                        <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
+                                            <!-- Minus button -->
+                                            <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
+                                                <path fill="#4c91c2" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                                            </svg>
+                                        </button>
 
-                        <section class="col-span-4 row-span-1  duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md relative  bg-white   w-[100%] h-[50px]">
-                            <div class="flex justify-center border-b-8 border-[#f0f1f3] pb-0">
-                                <button class="w-full relative flex items-center justify-center bg-blue-500 text-white font-bold py-3 px-3 rounded-t hover:bg-blue-600">
+                                            <!-- Number input -->
+                                            <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
+
+                                            <!-- Plus button -->
+                                            <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
+                                                <path fill="#4c91c2" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
+                                            </svg>
+                                        </button>
+                                        </div>
+
+                                        <!-- text-->
+                                        <p>4/4 còn lại</p>
+                                        <span>*</span>
+                                    </div>
+                                    <div class="w-2/12">
+                                        <div class="w-[120px]">
+                                            <select id="room" name="room" class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
+                                            <option value="FR">Mặc định</option>
+                                            <option value="US">404</option>
+                                            <option value="JP">405</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/12 flex justify-end items-center ">
+                                        <p>400,000</p>
+                                    </div>
+
+                                    <div class="w-2/12  flex  items-center ">
+                                        <div class="flex justify-center items-center gap-1 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
+                                            <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                                        </svg>
+                                            <span class="text-black ">2</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
+                                            <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
+                                        </svg>
+                                            <span class="text-black ">0</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- Sea view -->
+                                <div class="flex border-b border-stone-200 gap-6 py-4 px-3 text-black ">
+                                    <div class=" w-2/12 flex justify-start items-center">
+                                        <p>Sea view</p>
+                                    </div>
+
+                                    <div class="flex items-center w-4/12 gap-2 number-group">
+                                        <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
+                                            <!-- Minus button -->
+                                            <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
+                                                <path fill="#4c91c2" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                                            </svg>
+                                        </button>
+
+                                            <!-- Number input -->
+                                            <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
+
+                                            <!-- Plus button -->
+                                            <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
+                                                <path fill="#4c91c2" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
+                                            </svg>
+                                        </button>
+                                        </div>
+
+                                        <!-- text-->
+                                        <p>4/4 còn lại</p>
+                                        <span>*</span>
+                                    </div>
+                                    <div class="w-2/12">
+                                        <div class="w-[120px]">
+                                            <select id="room" name="room" class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
+                                            <option value="FR">Mặc định</option>
+                                            <option value="US">404</option>
+                                            <option value="JP">405</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/12 flex justify-end items-center ">
+                                        <p>400,000</p>
+                                    </div>
+
+                                    <div class="w-2/12  flex  items-center ">
+                                        <div class="flex justify-center items-center gap-1 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
+                                            <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                                        </svg>
+                                            <span class="text-black ">2</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
+                                            <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
+                                        </svg>
+                                            <span class="text-black ">0</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- Family -->
+                                <div class="flex  gap-6 py-5 px-3 text-black border-b border-stone-200">
+                                    <div class=" w-2/12 flex justify-start items-center ">
+                                        <p>Family</p>
+                                    </div>
+
+                                    <div class="flex items-center w-4/12 gap-2 number-group">
+                                        <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
+                                            <!-- Minus button -->
+                                            <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
+                                                <path fill="#4c91c2" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                                            </svg>
+                                        </button>
+
+                                            <!-- Number input -->
+                                            <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
+
+                                            <!-- Plus button -->
+                                            <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
+                                                <path fill="#4c91c2" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
+                                            </svg>
+                                        </button>
+                                        </div>
+
+                                        <!-- text-->
+                                        <p>4/4 còn lại</p>
+                                        <span>*</span>
+                                    </div>
+                                    <div class="w-2/12">
+                                        <div class="w-[120px]">
+                                            <select id="room" name="room" class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
+                                            <option value="FR">Mặc định</option>
+                                            <option value="US">404</option>
+                                            <option value="JP">405</option>
+                                        </select>
+                                        </div>
+                                    </div>
+                                    <div class="w-2/12 flex justify-end items-center ">
+                                        <p>400,000</p>
+                                    </div>
+
+                                    <div class="w-2/12  flex  items-center ">
+                                        <div class="flex justify-center items-center gap-1 ">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
+                                            <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                                        </svg>
+                                            <span class="text-black ">2</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
+                                            <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
+                                        </svg>
+                                            <span class="text-black ">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </section>
+                        </div>
+
+                        <div class="col-span-4 gap-5">
+
+
+                            <section class=" mb-3 duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md relative  bg-white   w-[100%] h-[50px]">
+                                <div class="flex justify-center border-b-8 border-[#f0f1f3] pb-0">
+                                    <button class="w-full relative flex items-center justify-center bg-blue-500 text-white font-bold py-3 px-3 rounded-t hover:bg-blue-600">
                                     Tiếp tục
                                   
                                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 448 512" class="absolute right-4"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                         <path fill="#ffffff" d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
                                 </button>
-                            </div>
-                            <!-- end dat phong- nhan phong -->
+                                </div>
+                                <!-- end dat phong- nhan phong -->
 
-                        </section>
+                            </section>
 
-                        <!-- Right-order -->
-                        <section class="col-span-6 row-span-8  duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-md  bg-white  w-[100%] h-[515px]  ">
-                            <!-- Header -->
-                            <div class="flex border-b border-stone-300 pb-4 p-3 px-3 gap-6 font-medium">
-                                <div class="w-2/12 ">
-                                    <p>Loại phòng</p>
-                                </div>
-                                <div class="w-4/12">
-                                    <p>Phòng (13 còn lại)</p>
-                                </div>
-                                <div class="w-2/12 ">
-                                    <p>Loại giá</p>
-                                </div>
-                                <div class=" w-2/12  justify-end flex">
-                                    <p>Giá mặc định</p>
-                                </div>
-                                <div class="w-2/12 flex ">
-                                    <p>Khách</p>
-                                </div>
-                            </div>
-                            <!-- Standard -->
-                            <div class="flex border-b border-stone-200 gap-6 py-4 px-3 text-black ">
-                                <div class=" w-2/12 flex justify-start items-center">
-                                    <p>Standard</p>
-                                </div>
 
-                                <div class="flex items-center w-4/12 gap-2 number-group">
-                                    <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
-                                        <!-- Minus button -->
-                                        <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
-                                                <path fill="#4c91c2" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
-                                            </svg>
-                                        </button>
 
-                                        <!-- Number input -->
-                                        <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
-
-                                        <!-- Plus button -->
-                                        <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
-                                                <path fill="#4c91c2" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
-                                            </svg>
-                                        </button>
+                            <!-- search-room -->
+                            <section class="  duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-b  bg-white  w-[100%] h-[515px] text-black ">
+                                <div class=" grid grid-cols-12 px-3 mt-1">
+                                    <div class="flex gap-2 col-span-10 ">
+                                        <input type="datetime-local" id="check-in" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[42%] rounded" placeholder="Ngày giờ đặt phòng" />
+                                        <span class="flex justify-center items-center  font-semibold text-[12px] ">-</span>
+                                        <input type="datetime-local" id="check-0ut" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[42%] rounded" placeholder="Ngày giờ đặt phòng" />
+                                    </div>
+                                    <div class="flex col-span-2 justify-end items-center">
+                                        <p class="flex items-center text-black font-semibold text-[16px]">3 đêm</p>
                                     </div>
 
-                                    <!-- text-->
-                                    <p>4/4 còn lại</p>
-                                    <span>*</span>
                                 </div>
-                                <div class="w-2/12">
-                                    <div class="w-[120px]">
-                                        <select id="room" name="room" class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
-                                            <option value="FR">Giá mặc định</option>
-                                            <option value="US">404</option>
-                                            <option value="JP">405</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="w-2/12 flex justify-end items-center ">
-                                    <p>400,000</p>
-                                </div>
-
-                                <div class="w-2/12  flex  items-center ">
-                                    <div class="flex justify-center items-center gap-1 ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
-                                            <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
-                                        </svg>
-                                        <span class="text-black ">2</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
-                                        <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
-                                    </svg>
-                                        <span class="text-black ">0</span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- City view -->
-                            <div class="flex border-b border-stone-200 gap-6 py-4 px-3 text-black ">
-                                <div class=" w-2/12 flex justify-start items-center">
-                                    <p>City view</p>
-                                </div>
-
-                                <div class="flex items-center w-4/12 gap-2 number-group">
-                                    <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
-                                        <!-- Minus button -->
-                                        <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
-                                                <path fill="#4c91c2" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
-                                            </svg>
-                                        </button>
-
-                                        <!-- Number input -->
-                                        <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
-
-                                        <!-- Plus button -->
-                                        <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
-                                                <path fill="#4c91c2" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
-                                            </svg>
-                                        </button>
+                                <div class="px-3">
+                                    <div class="border-b border-stone-400 pb-2">
                                     </div>
 
-                                    <!-- text-->
-                                    <p>4/4 còn lại</p>
-                                    <span>*</span>
                                 </div>
-                                <div class="w-2/12">
-                                    <div class="w-[120px]">
-                                        <select id="room" name="room" class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
-                                            <option value="FR">Mặc định</option>
-                                            <option value="US">404</option>
-                                            <option value="JP">405</option>
-                                        </select>
+
+                                <div class="grid grid-cols-10 px-3 py-2">
+                                    <div class=" col-span-2 text-black font-medium flex items-center">
+                                        <p>Standard</p>
                                     </div>
-                                </div>
-                                <div class="w-2/12 flex justify-end items-center ">
-                                    <p>400,000</p>
-                                </div>
-
-                                <div class="w-2/12  flex  items-center ">
-                                    <div class="flex justify-center items-center gap-1 ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
-                                            <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
-                                        </svg>
-                                        <span class="text-black ">2</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
-                                            <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
-                                        </svg>
-                                        <span class="text-black ">0</span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- Sea view -->
-                            <div class="flex border-b border-stone-200 gap-6 py-4 px-3 text-black ">
-                                <div class=" w-2/12 flex justify-start items-center">
-                                    <p>Sea view</p>
-                                </div>
-
-                                <div class="flex items-center w-4/12 gap-2 number-group">
-                                    <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
-                                        <!-- Minus button -->
-                                        <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
-                                                <path fill="#4c91c2" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
-                                            </svg>
-                                        </button>
-
-                                        <!-- Number input -->
-                                        <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
-
-                                        <!-- Plus button -->
-                                        <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
-                                                <path fill="#4c91c2" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <!-- text-->
-                                    <p>4/4 còn lại</p>
-                                    <span>*</span>
-                                </div>
-                                <div class="w-2/12">
-                                    <div class="w-[120px]">
-                                        <select id="room" name="room" class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
-                                            <option value="FR">Mặc định</option>
-                                            <option value="US">404</option>
-                                            <option value="JP">405</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="w-2/12 flex justify-end items-center ">
-                                    <p>400,000</p>
-                                </div>
-
-                                <div class="w-2/12  flex  items-center ">
-                                    <div class="flex justify-center items-center gap-1 ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
-                                            <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
-                                        </svg>
-                                        <span class="text-black ">2</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
-                                            <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
-                                        </svg>
-                                        <span class="text-black ">0</span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <!-- Family -->
-                            <div class="flex  gap-6 py-5 px-3 text-black border-b border-stone-200">
-                                <div class=" w-2/12 flex justify-start items-center ">
-                                    <p>Family</p>
-                                </div>
-
-                                <div class="flex items-center w-4/12 gap-2 number-group">
-                                    <div class="flex w-[108px] border border-gray-300 rounded-lg overflow-hidden">
-                                        <!-- Minus button -->
-                                        <button class="decrement flex items-center justify-center w-9 h-9 border-r border-gray-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
-                                                <path fill="#4c91c2" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
-                                            </svg>
-                                        </button>
-
-                                        <!-- Number input -->
-                                        <input type="text" value="1" class="numberInput w-9 text-center border-0 focus:ring-0">
-
-                                        <!-- Plus button -->
-                                        <button class="increment flex items-center justify-center w-9 h-9 border-l border-gray-300">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512">
-                                                <path fill="#4c91c2" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <!-- text-->
-                                    <p>4/4 còn lại</p>
-                                    <span>*</span>
-                                </div>
-                                <div class="w-2/12">
-                                    <div class="w-[120px]">
-                                        <select id="room" name="room" class="block w-full border p-2 text-black border-gray-300 bg-white  rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 ">
-                                            <option value="FR">Mặc định</option>
-                                            <option value="US">404</option>
-                                            <option value="JP">405</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="w-2/12 flex justify-end items-center ">
-                                    <p>400,000</p>
-                                </div>
-
-                                <div class="w-2/12  flex  items-center ">
-                                    <div class="flex justify-center items-center gap-1 ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
-                                            <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
-                                        </svg>
-                                        <span class="text-black ">2</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
-                                            <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
-                                        </svg>
-                                        <span class="text-black ">0</span>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </section>
-
-                        <!-- search-room -->
-                        <section class="col-span-4 row-span-8  duration-300 cursor-pointer border border-[var(--ht-neutral-100-)] rounded-b  bg-white  w-[100%] h-[515px] text-black ">
-                            <div class=" grid grid-cols-12 px-3 mt-1">
-                                <div class="flex gap-2 col-span-10 ">
-                                    <input type="datetime-local" id="check-in" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[42%] rounded" placeholder="Ngày giờ đặt phòng" />
-                                    <span class="flex justify-center items-center  font-semibold text-[12px] ">-</span>
-                                    <input type="datetime-local" id="check-0ut" class="text-black font-semibold text-[12px] focus:outline-none bg-white p-2 w-[42%] rounded" placeholder="Ngày giờ đặt phòng" />
-                                </div>
-                                <div class="flex col-span-2 justify-end items-center">
-                                    <p class="flex items-center text-black font-semibold text-[16px]">3 đêm</p>
-                                </div>
-
-                            </div>
-                            <div class="px-3">
-                                <div class="border-b border-stone-400 pb-2">
-                                </div>
-
-                            </div>
-
-                            <div class="grid grid-cols-10 px-3 py-2">
-                                <div class=" col-span-2 text-black font-medium flex items-center">
-                                    <p>Standard</p>
-                                </div>
-                                <div class="col-span-3">
-                                    <select id="room" name="room" class="btn text-black font-normal">
+                                    <div class="col-span-3">
+                                        <select id="room" name="room" class="btn text-black font-normal">
                                                       <option value="FR">403</option>
                                                       <option value="US">404</option>
                                                       <option value="JP">405</option>
                                                     </select>
+                                    </div>
+                                    <div class="col-span-5 flex justify-end items-center text-black font-medium">
+                                        <p>800,000</p>
+                                    </div>
                                 </div>
-                                <div class="col-span-5 flex justify-end items-center text-black font-medium">
-                                    <p>800,000</p>
-                                </div>
-                            </div>
 
-                            <div class="flex gap-5 px-3 py-2">
+                                <div class="flex gap-5 px-3 py-2">
 
-                                <div class="w-[90px] relative">
-                                    <!-- Icon người dùng phía trước -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2 top-1/2 transform -translate-y-1/2" height="12" width="10.5" viewBox="0 0 448 512">
+                                    <div class="w-[90px] relative">
+                                        <!-- Icon người dùng phía trước -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2 top-1/2 transform -translate-y-1/2" height="12" width="10.5" viewBox="0 0 448 512">
                                                 <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
                                             </svg>
-                                    <select id="country" name="country" class="block w-full p-2  pl-8 pr-2 border border-gray-300 bg-white rounded-md shadow-sm appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                        <select id="country" name="country" class="block w-full p-2  pl-8 pr-2 border border-gray-300 bg-white rounded-md shadow-sm appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                                                 <option value="FR">2</option>
                                                 <option value="US">3</option>
                                                 <option value="JP">4</option>
                                             </select>
-                                </div>
+                                    </div>
 
-                                <div class="w-[90px] relative">
-                                    <!-- Icon SVG mới phía trước -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2 top-1/2 transform -translate-y-1/2" height="12" width="7.5" viewBox="0 0 320 512">
+                                    <div class="w-[90px] relative">
+                                        <!-- Icon SVG mới phía trước -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2 top-1/2 transform -translate-y-1/2" height="12" width="7.5" viewBox="0 0 320 512">
                                                 <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
                                             </svg>
 
-                                    <select id="country" name="country" class="block w-full p-2 pl-8 pr-2 border border-gray-300 bg-white rounded-md shadow-sm appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                                        <select id="country" name="country" class="block w-full p-2 pl-8 pr-2 border border-gray-300 bg-white rounded-md shadow-sm appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                                                 <option value="FR">2</option>
                                                 <option value="US">3</option>
                                                 <option value="JP">4</option>
                                             </select>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <div class="px-3 pt-[55px]">
-                                <div class="bottom-line">
+                                <div class="px-3 pt-[55px]">
+                                    <div class="bottom-line">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="grid grid-cols-2 px-3 py-2 pb-3">
-                                <div class="flex justify-start items-center gap-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
+                                <div class="grid grid-cols-2 px-3 py-2 pb-3">
+                                    <div class="flex justify-start items-center gap-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 448 512">
                                         <path fill="#a0a2a7" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
                                     </svg>
-                                    <span class="text-black font-medium">2</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
+                                        <span class="text-black font-medium">2</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="12" width="10.5" viewBox="0 0 320 512">
                                         <path fill="#a0a2a7" d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304l0 128c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-223.1L59.4 304.5c-9.1 15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6l29.7 0c33.7 0 64.9 17.7 82.3 46.6l58.3 97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9 232 480c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-128-16 0z"/>
                                     </svg>
-                                    <span class="text-black font-medium">0</span>
-                                </div>
-                                <div class="flex justify-end ">
-                                    <span class="text-black font-medium">1 Phòng</span>
+                                        <span class="text-black font-medium">0</span>
+                                    </div>
+                                    <div class="flex justify-end ">
+                                        <span class="text-black font-medium">1 Phòng</span>
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <!-- THành-tiền -->
-                            <div class="grid grid-cols-2 px-3 py-2 text-black font-medium">
-                                <div>
-                                    <p class="text-xz">Thành tiền</p>
+                                <!-- THành-tiền -->
+                                <div class="grid grid-cols-2 px-3 py-2 text-black font-medium">
+                                    <div>
+                                        <p class="text-xz">Thành tiền</p>
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <span class=" text-xz ">1,200,000</span>
+                                    </div>
                                 </div>
-                                <div class="flex justify-end">
-                                    <span class=" text-xz ">1,200,000</span>
-                                </div>
-                            </div>
 
-                            <!-- End-thành-tiền -->
+                                <!-- End-thành-tiền -->
 
-                            <!--THuế-phí -->
-                            <div class="grid grid-cols-2 px-3 py-2 text-black font-medium">
-                                <div class="flex items-center">
-                                    <label class="flex items-center">
+                                <!--THuế-phí -->
+                                <div class="grid grid-cols-2 px-3 py-2 text-black font-medium">
+                                    <div class="flex items-center">
+                                        <label class="flex items-center">
                                 <input type="checkbox" id="subscribe" name="subscribe" class="mr-2 leading-tight text-blue-600 accent-blue-600 focus:ring-blue-500">
                                 <span class="text-xz">Thuế/Phí</span>
                             </label>
+                                    </div>
+                                    <div>
+                                        <span class="flex justify-end text-xz">120,000</span>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="flex justify-end text-xz">120,000</span>
+                                <!-- end- thue phi -->
+
+                                <!-- Tổng-tiền -->
+                                <div class="grid grid-cols-2 px-3 py-2 text-black font-medium">
+                                    <div>
+
+                                        <p class="text-xz">Tổng tiền</p>
+                                    </div>
+                                    <div>
+                                        <span class="flex justify-end text-xz">1,200,000</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- end- thue phi -->
+                                <!-- End-Tổng-tiền-->
 
-                            <!-- Tổng-tiền -->
-                            <div class="grid grid-cols-2 px-3 py-2 text-black font-medium">
-                                <div>
-
-                                    <p class="text-xz">Tổng tiền</p>
+                                <div class=" px-3 py-2 text-black font-medium">
+                                    <p class="text-xz">Thanh toán</p>
                                 </div>
-                                <div>
-                                    <span class="flex justify-end text-xz">1,200,000</span>
-                                </div>
-                            </div>
-                            <!-- End-Tổng-tiền-->
 
-                            <div class=" px-3 py-2 text-black font-medium">
-                                <p class="text-xz">Thanh toán</p>
-                            </div>
-
-                            <div class="flex gap-1 px-3 py-2">
-                                <select id="VND" name="VND" class="btn ">
+                                <div class="flex gap-1 px-3 py-2">
+                                    <select id="VND" name="VND" class="btn ">
                                   <option value="FR">VNĐ</option>
                                   <option value="US">USD</option>
                                   <option value="JP">EUR</option>
                                 </select>
 
-                                <select id="a" name="a" class="btn ">
+                                    <select id="a" name="a" class="btn ">
                                   <option value="FR">Tiền mặt</option>
                                   <option value="US">Chuyển khoản</option>
                                 </select>
 
-                                <input type="text" id="passport" name="passport" placeholder="0" class="flex pl-5 py-[8px] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 placeholder:text-xs">
-                            </div>
-                            <!-- End-thanh-toan -->
-
-                            <!-- Còn-lại -->
-                            <div class="grid grid-cols-2 px-3 py-4">
-                                <div>
-                                    <p class="text-base font-medium">Còn lại</p>
+                                    <input type="text" id="passport" name="passport" placeholder="0" class="flex pl-5 py-[8px] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 placeholder:text-xs">
                                 </div>
-                                <div>
-                                    <span class="flex justify-end text-red-500 font-semibold text-xz ">1,300,000</span>
+                                <!-- End-thanh-toan -->
+
+                                <!-- Còn-lại -->
+                                <div class="grid grid-cols-2 px-3 py-4">
+                                    <div>
+                                        <p class="text-base font-medium">Còn lại</p>
+                                    </div>
+                                    <div>
+                                        <span class="flex justify-end text-red-500 font-semibold text-xz ">1,300,000</span>
+                                    </div>
                                 </div>
-                            </div>
 
 
-                        </section>
-
+                            </section>
+                        </div>
                         <script>
                             // Chọn tất cả các nhóm số (number group)
                             document.querySelectorAll('.number-group').forEach(group => {
