@@ -16,11 +16,11 @@ body svg {
 }
 
 .menu-item-container {
-    @apply bg-[var(--menu-item-color-)] fixed left-0 top-[50px] h-full w-[200px];
+    @apply bg-[var(--menu-item-color-)] fixed left-0 top-[50px] h-full w-[200px] z-50;
 }
 
 .menu-item {
-    @apply flex p-3 gap-4 duration-300 font-[500] text-sm text-[var(--color-menu-icon-)] hover:bg-[var(--ht-body-bg-)] hover:text-[var(--navbar-color-)]
+    @apply relative flex p-3 gap-4 duration-300 font-[500] text-sm text-[var(--color-menu-icon-)] hover:bg-[var(--ht-body-bg-)] hover:text-[var(--navbar-color-)]
 }
 
 .menu-item:hover svg {
@@ -105,7 +105,7 @@ body svg {
 }
 
 .toolbar-top-type_item {
-    @apply flex items-center justify-center p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 select-none;
+    @apply flex items-center justify-center p-2 px-3 min-w-[100px] whitespace-nowrap rounded-full hover:text-[var(--navbar-color-)] duration-300 select-none;
 }
 
 
@@ -130,11 +130,13 @@ body svg {
     @apply w-[15px] h-[15px] fill-[var(--color-menu-icon-)];
 }
 
-/* nguyen */
 .btn {
     @apply block w-full border p-2 text-gray-500 border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)]
 }
 
+.sbm {
+    @apply rounded-md flex gap-1 items-center justify-center py-1 px-2 border border-[var(--room-empty-color-)] hover:bg-[var(--room-empty-color-)] hover:text-white duration-75 text-sm text-[var(--room-empty-color-)] font-[500]
+}
 
 .date-time {
     @apply text-black text-[10px] outline-none bg-white p-2 w-[49%] rounded border border-gray-300;
@@ -156,10 +158,14 @@ body svg {
     @apply block w-full border p-2 text-black border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)];
 }
 
-/* nguyen */
+.cash-fund_content svg,
 .checkout-body svg,
 .room-detail-body svg {
     @apply w-[15px] h-[15px] fill-[var(--color-menu-icon-)]
+}
+
+.icon {
+    @apply w-[15px] h-[15px] fill-[var(--color-menu-icon-)] mt-[2px]
 }
 
 .btn-fn {
