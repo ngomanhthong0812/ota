@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../../dist/output.css" rel="stylesheet">
+    <link href="../../../src/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-[var(--navbar-color-)] flex justify-between p-2 h-[50px] fixed w-full text-white z-10">
+        <div class="logo flex items-center flex-1">
+            <div class="w-[200px] flex items-center gap-2">
+                <img src="https://i0.wp.com/www.writefromscratch.com/wp-content/uploads/2018/12/demo-logo.png?fit=539%2C244&ssl=1&w=640"
+                    alt="logo" width="80" height="80">
+                <div class="hotel-name font-[500]">
+                    Demo
+                </div>
+            </div>
+            <div class="search relative flex-1">
+                <input type="text" placeholder="Tìm kiếm..."
+                    class="w-full rounded-md px-6 py-2 text-sm text-black outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                    style="fill: rgb(193, 193, 193);" class="absolute top-[50%] translate-y-[-45%] left-1">
+                    <path
+                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <div class=" flex flex-1 items-center justify-end gap-6">
+            <div class="account center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z">
+                    </path>
+                </svg>
+                TEST
+            </div>
+            <div class="country">
+                <img src="../../../assets/vietnam.png" alt="" width="18" height="18">
+            </div>
+            <div class="notification">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z">
+                    </path>
+                </svg>
+            </div>
+            <div class="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="flex">
+        <!-- start menu -->
+        <nav class="menu-item-container">
+            <ul>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d=" M4 11h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm0 10h6a1 1 0
+                                 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm10 0h6a1 1 0 0 0 1-1v-6a1 1 0 0
+                                 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm7.293-14.707-3.586-3.586a.999.999 0 0 0-1.414
+                                 0l-3.586 3.586a.999.999 0 0 0 0 1.414l3.586 3.586a.999.999 0 0 0 1.414
+                                 0l3.586-3.586a.999.999 0 0 0 0-1.414z">
+                            </path>
+                        </svg>
+                        <span>Thông tin chung</span>
+                        <p class="hidden-title">Thông tin chung</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M12 10c1.151 0 2-.848 2-2s-.849-2-2-2c-1.15 0-2 .848-2 2s.85 2 2 2zm0 1c-2.209 0-4 1.612-4 3.6v.386h8V14.6c0-1.988-1.791-3.6-4-3.6z">
+                            </path>
+                            <path
+                                d="M19 2H5c-1.103 0-2 .897-2 2v13c0 1.103.897 2 2 2h4l3 3 3-3h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-5 15-2 2-2-2H5V4h14l.002 13H14z">
+                            </path>
+                        </svg>
+                        <span>Quản lý đặt phòng</span>
+                        <p class="hidden-title">Quản lý đặt phòng</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 6h16v2H4V6zm0 12v-6h16.001l.001 6H4z">
+                            </path>
+                            <path d="M6 14h6v2H6z"></path>
+                        </svg>
+                        <span>Thu chi</span>
+                        <p class="hidden-title">Thu chi</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                        <span>Quản lý bán hàng</span>
+                        <p class="hidden-title">Quản lý bán hàng</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M7 14.001h2v2H7z"></path>
+                            <path
+                                d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z">
+                            </path>
+                        </svg>
+                        <span>Buồng phòng</span>
+                        <p class="hidden-title">Buồng phòng</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                            </path>
+                        </svg>
+                        <span>Email marketing</span>
+                        <p class="hidden-title">Email marketing</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 1.053.382 2.01 1 2.746V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.424c.618-.735 1-1.692 1-2.746V5c0-1.654-1.346-3-3-3zm1 3v2.831c0 1.14-.849 2.112-1.891 2.167L18 10c-1.103 0-2-.897-2-2V4h3c.552 0 1 .449 1 1zM10 8V4h4v4c0 1.103-.897 2-2 2s-2-.897-2-2zM4 5c0-.551.448-1 1-1h3v4c0 1.103-.897 2-2 2l-.109-.003C4.849 9.943 4 8.971 4 7.831V5zm6 11H6v-3h4v3z">
+                            </path>
+                        </svg>
+                        <span>Quản lý kho</span>
+                        <p class="hidden-title">Quản lý kho</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm8 7h-1V4l5 5h-4z">
+                            </path>
+                        </svg>
+                        <span>Báo cáo</span>
+                        <p class="hidden-title">Báo cáo</p>
+                    </a>
+                </li>
+            </ul>
+            <div
+                class="btn-menu_toggle cursor-pointer fixed w-[200px] flex justify-end bottom-0 left-0 bg-[var(--navbar-color-)] p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                    </path>
+                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                </svg>
+            </div>
+        </nav>
+        <!-- end menu -->
+
+        <main class="container-body ml-[200px] mt-[50px] w-[100%] p-3 text-sm text-[var(--color-menu-icon-)]">
+            <!-- start Toolbar Top -->
+            <div class="toolbar-top pb-2 flex items-center justify-between text-xs">
+                <div class="flex items-center justify-between px-3 w-full rounded-md">
+                    <h1 class="text-base font-[600] flex items-center gap-1">
+                        Phiếu chi tiền gửi
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                            class="icon"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M64 64C28.7 64 0 92.7 0 128L0 384c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64L64 64zm48 160l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zM96 336c0-8.8 7.2-16 16-16l352 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-352 0c-8.8 0-16-7.2-16-16zM376 160l80 0c13.3 0 24 10.7 24 24l0 48c0 13.3-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24l0-48c0-13.3 10.7-24 24-24z" />
+                        </svg>
+                    </h1>
+                    <button class="sbm group">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                            class="icon !fill-[var(--room-empty-color-)] group-hover:!fill-white"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l320 0c8.8 0 16-7.2 16-16l0-320c0-8.8-7.2-16-16-16L64 80zM0 96C0 60.7 28.7 32 64 32l320 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
+                        </svg>
+                        Lưu
+                    </button>
+                </div>
+            </div>
+            <!-- end Toolbar Top -->
+
+            <!-- start Body Content -->
+            <div class="bg-white cash-fund_content border !border-[var(--ht-neutral-100-)] rounded-md p-3">
+                <div class="flex items-center gap-1 pb-3">
+                    <input type="checkbox">
+                    <span>Hiển thị phiếu trên biên bản bàn giao ca</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon cursor-pointer"
+                        style="width: 12px; height: 12px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg>
+                </div>
+                <div class="flex gap-2">
+                    <div class="flex-1 p-2 pb-5 border-x border-b border-[var(--ht-neutral-100-)] rounded-md">
+                        <h2
+                            class="uppercase font-[500] text-[13px] border-b !border-[var(--ht-neutral-100-)] pb-2 mb-2">
+                            Thông
+                            tin chung</h2>
+                        <select class="custom-select btn mb-4">
+                            <option value="" selected>Tìm kiếm khách hàng...</option>
+                            <option value="">Cristiano Ronado</option>
+                            <option value="">Nguyễn Văn A</option>
+                            <option value="">Lê Thi B</option>
+                            <option value="">Nguyễn Trần Duy Nhất</option>
+                        </select>
+                        <p class="text-[#b2b2b2] border-b border-dashed border-[var(--ht-neutral-100-)] py-1 mb-8 ml-3">
+                            Người
+                            nhận
+                        </p>
+                        <p class="text-[#b2b2b2] border-b border-dashed border-[var(--ht-neutral-100-)] py-1 mb-8 ml-3">
+                            Địa
+                            chị
+                        </p>
+                        <div class="flex items-center gap-3 mb-4">
+                            <span>Nội dung chi</span>
+                            <select class="btn flex-1">
+                                <option value="" selected>Nội dung...</option>
+                                <option value="">Chi từ phòng</option>
+                                <optgroup label="Dịch vụ sinh hoạt">
+                                    <option value="">--Điện</option>
+                                    <option value="">--Nước</option>
+                                    <option value="">--Internet</option>
+                                    <option value="">--Truyền hình cáp</option>
+                                    <option value="">--Điện thoại</option>
+                                    <option value="">--Sửa chữa</option>
+                                </optgroup>
+                                <optgroup label="Phụ cấp">
+                                    <option value="">--Lương</option>
+                                    <option value="">--Thưởng</option>
+                                </optgroup>
+                                <optgroup label="Phụ phí">
+                                    <option value="">--Thuế</option>
+                                    <option value="">--Hoa hồng</option>
+                                    <option value="">--Quảng cáo</option>
+                                </optgroup>
+                                <option value="">Mua hàng</option>
+                                <option value="">Trả nợ nhà cung cấp</option>
+                                <option value="">Mua sắm đồ đạc</option>
+                                <option value="">Mua sắm đồ đạc</option>
+                                <option value="">Chi tiêu cá nhân (Host)</option>
+                                <option value="">Kết chuyển tiền (Host)</option>
+                                <option value="">Khác</option>
+                            </select>
+                            <div class="flex-1">
+                                <input type="text"
+                                    class="p-2 w-full border-b outline-none focus:!border-[var(--room-empty-color-)]"
+                                    placeholder="Nhập ghi chú">
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <label>Tài khoản ngân hàng</label>
+                            <select class="btn !py-1 !px-2 !w-auto ml-2 max-w-[350px]">
+                                <option>MB - NGO MANH THONG(483920584311111)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex-1 p-2 pb-5 border-x border-b border-[var(--ht-neutral-100-)] rounded-md">
+                        <h2
+                            class="uppercase font-[500] text-[13px] border-b !border-[var(--ht-neutral-100-)] pb-2 mb-2">
+                            Chứng từ</h2>
+                        <p
+                            class="flex flex-col text-[#b2b2b2] border-b border-dashed border-[var(--ht-neutral-100-)] py-1 mb-4 ml-3">
+                            <span class="text-xs">Số phiếu chi</span>
+                            <span>CT001</span>
+                        </p>
+                        <div class="center !justify-between mb-4 ml-3">
+                            <label for="start-date">Ngày chi tiền</label>
+                            <input type="date" id="start-date"
+                                class="btn !w-auto ml-2"><!-- Lấy thời gian hiện tại làm mặt định qua js -->
+                        </div>
+                        <div class="center !justify-between mb-4 ml-3">
+                            <label>Phiếu chi tiền</label>
+                            <select class="btn !w-auto">
+                                <option value="" selected>Chi khác</option>
+                            </select>
+                        </div>
+                        <select class="custom-select btn mb-4">
+                            <option value="" selected>Tìm kiếm nhân viên...</option>
+                            <option value="">Mạnh Thông</option>
+                            <option value="">Đình Hoài</option>
+                            <option value="">Ngọc Quang</option>
+                            <option value="">Bảo nguyên</option>
+                        </select>
+                        <div class="flex-1">
+                            <input type="text"
+                                class="p-2 w-full border-b outline-none focus:!border-[var(--room-empty-color-)]"
+                                placeholder="Số tài khoản người nhận">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Body Content -->
+
+
+
+            <!-- start Toolbar Top 2-->
+            <div class="toolbar-top rounded-t-md pb-2 flex items-center justify-between text-xs mt-3">
+                <div class="flex ">
+                    <div class="toolbar-top-room-detail flex rounded-3xl p-1 font-[600] bg-white">
+                        <button class="toolbar-top-type_item active">
+                            Chi tiết
+                        </button>
+                        <button class="toolbar-top-type_item">
+                            Chứng từ
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- end Toolbar Top 2 -->
+
+            <!-- start Body Content 2 -->
+            <div class="bg-white cash-fund_content border !border-[var(--ht-neutral-100-)] rounded-md p-3">
+                <table class="w-full rounded-t-[3px] overflow-hidden">
+                    <thead
+                        class="relative border !border-[var(--ht-neutral-100-)] font-[500] text-[var(--color-menu-icon-)]">
+                        <tr class="bg-[var(--ht-neutral-100-)]">
+                            <td class="w-[80%] p-2">
+                                <p class="whitespace-nowrap">Mô tả</p>
+                            </td>
+                            <td class="w-[20%] p-2 text-center">
+                                <p class="whitespace-nowrap">Tổng tiền</p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="text-[14px]">
+                        <tr class="group border-b !border-[var(--ht-neutral-100-)]">
+                            <td class="p-2 py-4">
+                                <div class="flex gap-2">
+                                    <button
+                                        class="btn !w-[40px] !flex items-center justify-center !bg-[var(--room-empty-color-)] !text-white border-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15"
+                                            height="15" style="margin-top: 2px;">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M5 12h14m-7 7V5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <button
+                                        class="btn !w-[40px] !flex items-center justify-center  !bg-[var(--room-out-of-service-color-)] !text-white border-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15"
+                                            height="15" style="margin-top: 2px;">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M5 12h14m-7 7V5">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div class="flex-1">
+                                        <input type="text"
+                                            class="p-2 w-full border-b outline-none focus:!border-[var(--room-empty-color-)]"
+                                            placeholder="Nhập ghi chú">
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-2">
+                                <div class="flex gap-2">
+                                    <select class="btn !w-auto">
+                                        <option value="" selected>VND</option>
+                                    </select>
+                                    <div class="flex-1">
+                                        <input type="text"
+                                            class="p-2 w-full border-b outline-none focus:!border-[var(--room-empty-color-)]"
+                                            placeholder="Nhập số tiền">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="flex items-center justify-end py-3">
+                    <span class="py-1 px-2 rounded-md text-sm font-[500] bg-blue-500 !text-white">
+                        Tổng VND 0
+                    </span>
+                </div>
+            </div>
+            <!-- end Body Content 2-->
+
+
+        </main>
+    </div>
+
+
+    <script>
+        const btnMenuToggle = document.querySelector('.btn-menu_toggle');
+        const menu = document.querySelector('.menu-item-container');
+
+        btnMenuToggle.addEventListener('click', () => {
+            menu.classList.toggle('menu-item-container_toggle');
+        })
+    </script>
+
+</body>
+
+</html>

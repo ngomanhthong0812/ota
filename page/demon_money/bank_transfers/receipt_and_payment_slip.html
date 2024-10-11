@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../../dist/output.css" rel="stylesheet">
+    <link href="../../../src/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-[var(--navbar-color-)] flex justify-between p-2 h-[50px] fixed w-full text-white z-10">
+        <div class="logo flex items-center flex-1">
+            <div class="w-[200px] flex items-center gap-2">
+                <img src="https://i0.wp.com/www.writefromscratch.com/wp-content/uploads/2018/12/demo-logo.png?fit=539%2C244&ssl=1&w=640"
+                    alt="logo" width="80" height="80">
+                <div class="hotel-name font-[500]">
+                    Demo
+                </div>
+            </div>
+            <div class="search relative flex-1">
+                <input type="text" placeholder="Tìm kiếm..."
+                    class="w-full rounded-md px-6 py-2 text-sm text-black outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                    style="fill: rgb(193, 193, 193);" class="absolute top-[50%] translate-y-[-45%] left-1">
+                    <path
+                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <div class=" flex flex-1 items-center justify-end gap-6">
+            <div class="account center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z">
+                    </path>
+                </svg>
+                TEST
+            </div>
+            <div class="country">
+                <img src="../../../assets/vietnam.png" alt="" width="18" height="18">
+            </div>
+            <div class="notification">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z">
+                    </path>
+                </svg>
+            </div>
+            <div class="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="flex">
+        <!-- start menu -->
+        <nav class="menu-item-container">
+            <ul>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d=" M4 11h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm0 10h6a1 1 0
+                                 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm10 0h6a1 1 0 0 0 1-1v-6a1 1 0 0
+                                 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm7.293-14.707-3.586-3.586a.999.999 0 0 0-1.414
+                                 0l-3.586 3.586a.999.999 0 0 0 0 1.414l3.586 3.586a.999.999 0 0 0 1.414
+                                 0l3.586-3.586a.999.999 0 0 0 0-1.414z">
+                            </path>
+                        </svg>
+                        <span>Thông tin chung</span>
+                        <p class="hidden-title">Thông tin chung</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M12 10c1.151 0 2-.848 2-2s-.849-2-2-2c-1.15 0-2 .848-2 2s.85 2 2 2zm0 1c-2.209 0-4 1.612-4 3.6v.386h8V14.6c0-1.988-1.791-3.6-4-3.6z">
+                            </path>
+                            <path
+                                d="M19 2H5c-1.103 0-2 .897-2 2v13c0 1.103.897 2 2 2h4l3 3 3-3h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-5 15-2 2-2-2H5V4h14l.002 13H14z">
+                            </path>
+                        </svg>
+                        <span>Quản lý đặt phòng</span>
+                        <p class="hidden-title">Quản lý đặt phòng</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 6h16v2H4V6zm0 12v-6h16.001l.001 6H4z">
+                            </path>
+                            <path d="M6 14h6v2H6z"></path>
+                        </svg>
+                        <span>Thu chi</span>
+                        <p class="hidden-title">Thu chi</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                        <span>Quản lý bán hàng</span>
+                        <p class="hidden-title">Quản lý bán hàng</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M7 14.001h2v2H7z"></path>
+                            <path
+                                d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z">
+                            </path>
+                        </svg>
+                        <span>Buồng phòng</span>
+                        <p class="hidden-title">Buồng phòng</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                            </path>
+                        </svg>
+                        <span>Email marketing</span>
+                        <p class="hidden-title">Email marketing</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path
+                                d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 1.053.382 2.01 1 2.746V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.424c.618-.735 1-1.692 1-2.746V5c0-1.654-1.346-3-3-3zm1 3v2.831c0 1.14-.849 2.112-1.891 2.167L18 10c-1.103 0-2-.897-2-2V4h3c.552 0 1 .449 1 1zM10 8V4h4v4c0 1.103-.897 2-2 2s-2-.897-2-2zM4 5c0-.551.448-1 1-1h3v4c0 1.103-.897 2-2 2l-.109-.003C4.849 9.943 4 8.971 4 7.831V5zm6 11H6v-3h4v3z">
+                            </path>
+                        </svg>
+                        <span>Quản lý kho</span>
+                        <p class="hidden-title">Quản lý kho</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm8 7h-1V4l5 5h-4z">
+                            </path>
+                        </svg>
+                        <span>Báo cáo</span>
+                        <p class="hidden-title">Báo cáo</p>
+                    </a>
+                </li>
+            </ul>
+            <div
+                class="btn-menu_toggle cursor-pointer fixed w-[200px] flex justify-end bottom-0 left-0 bg-[var(--navbar-color-)] p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                    </path>
+                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                </svg>
+            </div>
+        </nav>
+        <!-- end menu -->
+
+        <main class="container-body ml-[200px] mt-[50px] w-[100%] p-3 text-sm text-[var(--color-menu-icon-)]">
+            <!-- start Toolbar Top -->
+            <div class="toolbar-top rounded-t-md pb-2 flex items-center justify-between text-xs">
+                <div class="flex ">
+                    <div class="toolbar-top-room-detail flex rounded-3xl p-1 font-[600] bg-white">
+                        <a href="./receipt_and_payment_slip.html" class="toolbar-top-type_item active">
+                            Lập phiếu thu chi
+                        </a>
+                        <a href="./compare.html" class="toolbar-top-type_item">
+                            Đối chiếu
+                        </a>
+                        <a href="./transfer_details.html" class="toolbar-top-type_item">
+                            Sổ chi tiết tiền gửi
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end Toolbar Top -->
+
+            <!-- start Body Content -->
+            <div class="bg-white cash-fund_content border !border-[var(--ht-neutral-100-)] rounded-md p-3">
+                <div class="flex items-center gap-8">
+                    <select class="btn !py-1 !px-2 !w-auto">
+                        <option value="today">Hôm nay</option>
+                        <option value="week">Tuần này</option>
+                        <option value="this-month">Tháng này</option>
+                        <option value="last-month">Tháng trước</option>
+                        <option value="quarter">Quý này</option>
+                    </select>
+                    <div class=center>
+                        <label for="start-date">Từ</label>
+                        <input type="date" id="start-date"
+                            class="btn !py-1 !px-2 !w-auto ml-2"><!-- Lấy thời gian hiện tại làm mặt định qua js -->
+                    </div>
+                    <div class=center>
+                        <label for="end-date">Đến</label>
+                        <input type="date" id="end-date"
+                            class="btn !py-1 !px-2 !w-auto ml-2"><!-- Lấy thời gian hiện tại làm mặt định qua js-->
+                    </div>
+                    <select class="btn !py-1 !px-2 !w-auto">
+                        <option>Phiếu thu tiền</option>
+                        <option>Phiếu chi tiền</option>
+                    </select>
+                    <button class="sbm group">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            style="fill: var(--room-empty-color-); width: 20px; height: 20px;"
+                            class="group-hover:!fill-white">
+                            <path
+                                d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <table class="w-full rounded-t-[3px] overflow-hidden mt-3">
+                    <thead
+                        class="relative border !border-[var(--ht-neutral-100-)] font-[500] text-[var(--color-menu-icon-)]">
+                        <tr class="bg-[var(--ht-neutral-100-)]">
+                            <td class="w-[10%] p-2 ">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        style="margin-right: 10px; margin-top: 2px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                    </svg>
+                                    <p class="whitespace-nowrap">Ngày</p>
+                                </div>
+                            </td>
+                            <td class="w-[25%] p-2">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        style="margin-right: 10px; margin-top: 2px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160l0 8c0 13.3 10.7 24 24 24l400 0c13.3 0 24-10.7 24-24l0-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224l-64 0 0 196.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512l448 0c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1L448 224l-64 0 0 192-40 0 0-192-64 0 0 192-48 0 0-192-64 0 0 192-40 0 0-192zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                    </svg>
+                                    <p class="whitespace-nowrap">Tài khoản</p>
+                                </div>
+                            </td>
+                            <td class="w-[10%] p-2">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                                        style="margin-right: 10px; margin-top: 2px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l448 0c8.8 0 16-7.2 16-16l0-320c0-8.8-7.2-16-16-16L64 80zM0 96C0 60.7 28.7 32 64 32l448 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zm96 64a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm104 0c0-13.3 10.7-24 24-24l224 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-224 0c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24l224 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-224 0c-13.3 0-24-10.7-24-24zm0 96c0-13.3 10.7-24 24-24l224 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-224 0c-13.3 0-24-10.7-24-24zm-72-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM96 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                                    </svg>
+                                    <p class="whitespace-nowrap">Số chứng từ</p>
+                                </div>
+                            </td>
+                            <td class="w-[15%] p-2">
+                                <div class="flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                                        style="margin-right: 10px; margin-top: 2px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M160 0c17.7 0 32 14.3 32 32l0 35.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11l0 33.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.9c-.4-.1-.9-.1-1.3-.2l-.2 0s0 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7s0 0 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11L128 32c0-17.7 14.3-32 32-32z" />
+                                    </svg>
+                                    <p class="whitespace-nowrap">Số tiền (VND)</p>
+                                </div>
+                            </td>
+                            <td class="w-[40%] p-2">
+                                <div class="flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        style="margin-right: 10px; margin-top: 2px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M256 448c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6 .6-1 1.1-1.3 1.4l-.3 .3c0 0 0 0 0 0c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9zM128 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm128 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm96 32a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                                    </svg>
+                                    <p class="whitespace-nowrap">Lý do</p>
+                                </div>
+                            </td>
+                            <td class="w-[100px] absolute top-[50%] right-0 translate-y-[-50%]">
+                                <div class="flex gap-1 p-1">
+                                    <a href="./add_receipt.html"
+                                        class="btn-receipt btn !flex items-center justify-center !bg-[var(--room-empty-color-)] !text-white border-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15"
+                                            height="15" style="margin-top: 2px;">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M5 12h14m-7 7V5">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="./add_payment_slip.html"
+                                        class="btn-payment-slip btn !flex items-center justify-center !bg-[var(--room-out-of-service-color-)] !text-white border-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15"
+                                            height="15" style="margin-top: 2px;">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M5 12h14m-7 7V5">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody class="text-[14px]">
+                        <tr class="group border-b !border-[var(--ht-neutral-100-)]">
+                            <td class="p-2">
+                                <p>09/10/2024</p>
+                                <p>16:18:58</p>
+                            </td>
+                            <td class="p-2">MB - NGO MANH THONG(483920584311111)</td>
+                            <td class="p-2 text-[var(--room-empty-color-)] text-center">TG001</td>
+                            <td class="p-2 text-center">5,000,000</td>
+                            <td class="p-2 border-l">thonngo@123 nhận đặt cọc VND 5,000,000(Chuyển khoản NH) cho phòng
+                                103</td>
+                            <td class="p-2">
+                                <div class="flex">
+                                    <div class="flex invisible duration-75 group-hover:visible">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                            style="margin-right: 10px; margin-top: 2px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                            <path
+                                                d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-96c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7-14.3 32-32 32L96 448c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 64z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                            style="margin-right: 10px; margin-top: 2px;">
+                                            <path
+                                                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        style="margin-right: 10px; margin-top: 2px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="group border-b !border-[var(--ht-neutral-100-)] bg-[#f8f8f8]">
+                            <td class="p-2">
+                                <p>09/10/2024</p>
+                                <p>16:18:58</p>
+                            </td>
+                            <td class="p-2">MB - NGO MANH THONG(483920584311111)</td>
+                            <td class="p-2 text-[var(--room-empty-color-)] text-center">TG001</td>
+                            <td class="p-2 text-center">5,000,000</td>
+                            <td class="p-2 border-l">thonngo@123 nhận đặt cọc VND 5,000,000(Chuyển khoản NH) cho phòng
+                                103</td>
+                            <td class="p-2 text-center">
+                                <span class="whitespace-nowrap text-[var(--room-dirty-color-)] font-[500]">Đã huỷ</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination center !justify-end p-4 gap-3">
+                    <span>1-10 trên 15</span>
+                    <div
+                        class="group center border p-[7px] rounded-[3px] cursor-pointer duration-75 hover:bg-[var(--room-empty-color-)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                            style="fill: var(--ht-neutral-200-);"
+                            class="group-hover:!fill-white"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                        </svg>
+                    </div>
+                    <div
+                        class="group center border p-[7px] rounded-[3px] cursor-pointer duration-75 hover:bg-[var(--room-empty-color-)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                            class="group-hover:!fill-white"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- end Body Content -->
+
+        </main>
+    </div>
+
+
+    <script>
+        const btnMenuToggle = document.querySelector('.btn-menu_toggle');
+        const menu = document.querySelector('.menu-item-container');
+
+        btnMenuToggle.addEventListener('click', () => {
+            menu.classList.toggle('menu-item-container_toggle');
+        })
+    </script>
+
+</body>
+
+</html>

@@ -66,13 +66,14 @@
                     <a href="#" class="menu-item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                             <path d=" M4 11h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm0 10h6a1 1 0
-                                             0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm10 0h6a1 1 0 0 0 1-1v-6a1 1 0 0
-                                             0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm7.293-14.707-3.586-3.586a.999.999 0 0 0-1.414
-                                             0l-3.586 3.586a.999.999 0 0 0 0 1.414l3.586 3.586a.999.999 0 0 0 1.414
-                                             0l3.586-3.586a.999.999 0 0 0 0-1.414z">
+                                     0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm10 0h6a1 1 0 0 0 1-1v-6a1 1 0 0
+                                     0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm7.293-14.707-3.586-3.586a.999.999 0 0 0-1.414
+                                     0l-3.586 3.586a.999.999 0 0 0 0 1.414l3.586 3.586a.999.999 0 0 0 1.414
+                                     0l3.586-3.586a.999.999 0 0 0 0-1.414z">
                             </path>
                         </svg>
                         <span>Thông tin chung</span>
+                        <p class="hidden-title">Thông tin chung</p>
                     </a>
                 </li>
                 <li>
@@ -86,6 +87,7 @@
                             </path>
                         </svg>
                         <span>Quản lý đặt phòng</span>
+                        <p class="hidden-title">Quản lý đặt phòng</p>
                     </a>
                 </li>
                 <li>
@@ -97,6 +99,7 @@
                             <path d="M6 14h6v2H6z"></path>
                         </svg>
                         <span>Thu chi</span>
+                        <p class="hidden-title">Thu chi</p>
                     </a>
                 </li>
                 <li>
@@ -109,6 +112,7 @@
                             <circle cx="17.5" cy="19.5" r="1.5"></circle>
                         </svg>
                         <span>Quản lý bán hàng</span>
+                        <p class="hidden-title">Quản lý bán hàng</p>
                     </a>
                 </li>
                 <li>
@@ -120,6 +124,7 @@
                             </path>
                         </svg>
                         <span>Buồng phòng</span>
+                        <p class="hidden-title">Buồng phòng</p>
                     </a>
                 </li>
                 <li>
@@ -130,6 +135,7 @@
                             </path>
                         </svg>
                         <span>Email marketing</span>
+                        <p class="hidden-title">Email marketing</p>
                     </a>
                 </li>
                 <li>
@@ -140,6 +146,7 @@
                             </path>
                         </svg>
                         <span>Quản lý kho</span>
+                        <p class="hidden-title">Quản lý kho</p>
                     </a>
                 </li>
                 <li>
@@ -149,12 +156,13 @@
                             </path>
                         </svg>
                         <span>Báo cáo</span>
+                        <p class="hidden-title">Báo cáo</p>
                     </a>
                 </li>
             </ul>
             <div
                 class="btn-menu_toggle cursor-pointer fixed w-[200px] flex justify-end bottom-0 left-0 bg-[var(--navbar-color-)] p-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                     <path
                         d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
                     </path>
@@ -422,6 +430,15 @@
 
         </main>
     </div>
+
+    <script>
+        const btnMenuToggle = document.querySelector('.btn-menu_toggle');
+        const menu = document.querySelector('.menu-item-container');
+
+        btnMenuToggle.addEventListener('click', () => {
+            menu.classList.toggle('menu-item-container_toggle');
+        })
+    </script>
 
 </body>
 
