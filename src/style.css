@@ -211,3 +211,48 @@
 }
 
 /* end Thêm hiển thị nội dung khi hover vào icon trong tình trạng menu thu gọn */
+
+/*start submenu */
+.submenu {
+    visibility: hidden;
+}
+
+.submenu li .menu-item {
+    padding-left: 20px;
+}
+
+
+.menu-item-container_toggle .submenu li .menu-item {
+    padding-left: 0.75rem;
+}
+
+.menu-item-container li {
+    max-height: 44px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/*end submenu */
+
+/* start show submenu */
+.menu-item span .menu-item_icon {
+    transition: 0.3s ease-in-out;
+}
+
+.show-submenu .menu-item span .menu-item_icon {
+    transform: rotate(90deg);
+}
+
+.show-submenu .submenu {
+    visibility: visible;
+}
+
+.show-submenu {
+    max-height: 200px !important;
+}
+
+.menu-item-container_toggle .show-submenu:has(.submenu) {
+    border-top: 1px solid var(--ht-neutral-200-);
+    border-bottom: 1px solid var(--ht-neutral-200-);
+}
+
+/* end show submenu */
