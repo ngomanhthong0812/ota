@@ -16,11 +16,11 @@ body svg {
 }
 
 .menu-item-container {
-    @apply bg-[var(--menu-item-color-)] fixed left-0 top-[50px] h-full w-[200px] z-50;
+    @apply bg-[var(--menu-item-color-)] fixed left-0 top-[50px] h-full w-[200px] z-50 pb-[90px];
 }
 
 .menu-item {
-    @apply relative flex p-3 gap-4 duration-300 font-[500] text-sm text-[var(--color-menu-icon-)] hover:bg-[var(--ht-body-bg-)] hover:text-[var(--navbar-color-)]
+    @apply relative flex p-3 gap-4 duration-300 font-[500] text-sm text-[var(--color-menu-icon-)] hover:bg-[var(--ht-body-bg-)] hover:text-[var(--navbar-color-)] bg-white
 }
 
 .menu-item:hover svg {
@@ -29,6 +29,10 @@ body svg {
 
 .menu-item svg {
     @apply fill-[var(--color-menu-icon-)];
+}
+
+.menu-item span {
+    @apply flex flex-1 items-center justify-between
 }
 
 .menu-item-container .active {
