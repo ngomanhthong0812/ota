@@ -143,7 +143,7 @@ body svg {
 }
 
 .date-time {
-    @apply text-black text-[10px] outline-none bg-white p-2 w-[49%] rounded border border-gray-300;
+    @apply text-sm outline-none bg-white p-2 w-[50%] rounded border border-gray-300;
 }
 
 .bottom-line {
@@ -155,7 +155,7 @@ body svg {
 }
 
 .title-info {
-    @apply uppercase bottom-line p-2 text-base text-black font-medium
+    @apply border-b border-[var(--ht-neutral-100-)] py-2 text-base font-medium
 }
 
 .btn-tx-black {
@@ -183,3 +183,31 @@ body svg {
 .checkout-detail:hover .select {
     @apply flex;
 }
+
+
+/* nguyên */
+.btn-loaigia {
+    @apply block w-full border p-2 text-black border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)];
+}
+
+.btn-soluong {
+    @apply block w-full p-2 pl-8 pr-2 border border-gray-300 bg-white rounded-md shadow-sm appearance-none focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)];
+}
+
+.btn-nhapgiathien {
+    @apply flex pl-5 py-[8px] border placeholder:text-black font-semibold border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)];
+}
+
+.checkbox-thuephi {
+    @apply mr-2 leading-tight focus:outline-none text-[#279656] accent-[#279656] focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)];
+}
+
+.btn-border-info {
+    @apply flex w-full pl-7 py-[8px] border text-gray-500 border-gray-300 rounded-md focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)];
+}
+
+.btn-border-green {
+    @apply focus:outline-none focus:ring-[var(--navbar-color-)] focus:border-[var(--navbar-color-)];
+}
+
+/* nguyên */
