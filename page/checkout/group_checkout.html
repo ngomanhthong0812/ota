@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+    <link href="../../src/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="bg-[var(--navbar-color-)] flex justify-between p-2 h-[50px] fixed w-full text-white z-10">
+        <div class="flex items-center flex-1 logo">
+            <div class="w-[200px] flex items-center gap-2">
+                <img src="https://i0.wp.com/www.writefromscratch.com/wp-content/uploads/2018/12/demo-logo.png?fit=539%2C244&ssl=1&w=640"
+                    alt="logo" width="80" height="80">
+                <div class="hotel-name font-[500]">
+                    Demo
+                </div>
+            </div>
+            <div class="relative flex-1 search">
+                <input type="text" placeholder="Tìm kiếm..." class="w-full px-6 py-2 text-sm text-black rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                    style="fill: rgb(193, 193, 193);" class="absolute top-[50%] translate-y-[-45%] left-1">
+                    <path
+                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <div class="flex items-center justify-end flex-1 gap-6 ">
+            <div class="account center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z">
+                    </path>
+                </svg>
+                TEST
+            </div>
+            <div class="country">
+                <img src="../../assets/vietnam.png" alt="" width="18" height="18">
+            </div>
+            <div class="notification">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z">
+                    </path>
+                </svg>
+            </div>
+            <div class="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="flex">
+        <!-- start menu -->
+        <nav class="menu-item-container">
+            <ul>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d=" M4 11h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm0 10h6a1 1 0
+                                 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm10 0h6a1 1 0 0 0 1-1v-6a1 1 0 0
+                                 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm7.293-14.707-3.586-3.586a.999.999 0 0 0-1.414
+                                 0l-3.586 3.586a.999.999 0 0 0 0 1.414l3.586 3.586a.999.999 0 0 0 1.414
+                                 0l3.586-3.586a.999.999 0 0 0 0-1.414z">
+                            </path>
+                        </svg>
+                        Thông tin chung
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M12 10c1.151 0 2-.848 2-2s-.849-2-2-2c-1.15 0-2 .848-2 2s.85 2 2 2zm0 1c-2.209 0-4 1.612-4 3.6v.386h8V14.6c0-1.988-1.791-3.6-4-3.6z">
+                            </path>
+                            <path
+                                d="M19 2H5c-1.103 0-2 .897-2 2v13c0 1.103.897 2 2 2h4l3 3 3-3h4c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-5 15-2 2-2-2H5V4h14l.002 13H14z">
+                            </path>
+                        </svg>
+                        Quản lý đặt phòng
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 6h16v2H4V6zm0 12v-6h16.001l.001 6H4z">
+                            </path>
+                            <path d="M6 14h6v2H6z"></path>
+                        </svg>
+                        Thu chi
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                        Quản lý bán hàng
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M7 14.001h2v2H7z"></path>
+                            <path
+                                d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z">
+                            </path>
+                        </svg>
+                        Buồng phòng
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                            </path>
+                        </svg>
+                        Email marketing
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 1.053.382 2.01 1 2.746V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.424c.618-.735 1-1.692 1-2.746V5c0-1.654-1.346-3-3-3zm1 3v2.831c0 1.14-.849 2.112-1.891 2.167L18 10c-1.103 0-2-.897-2-2V4h3c.552 0 1 .449 1 1zM10 8V4h4v4c0 1.103-.897 2-2 2s-2-.897-2-2zM4 5c0-.551.448-1 1-1h3v4c0 1.103-.897 2-2 2l-.109-.003C4.849 9.943 4 8.971 4 7.831V5zm6 11H6v-3h4v3z">
+                            </path>
+                        </svg>
+                        Quản lý kho
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm8 7h-1V4l5 5h-4z">
+                            </path>
+                        </svg>
+                        Báo cáo
+                    </a>
+                </li>
+            </ul>
+            <div class="fixed w-[200px] flex justify-end bottom-0 left-0 bg-[var(--navbar-color-)] p-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z">
+                    </path>
+                    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+                </svg>
+            </div>
+        </nav>
+        <!-- end menu -->
+
+        <main class="ml-[200px] mt-[50px] w-[100%] p-3 text-sm text-[var(--color-menu-icon-)] room-detail-body">
+            <div class="">
+                <!-- start Toolbar Top -->
+                <div class="toolbar-top rounded-t-md pb-2 flex items-center justify-between text-xs">
+                    <div class=" flex flex-col gap-3 ">
+                        <div class="flex toolbar-top-room-detail">
+                            <div class="flex rounded-3xl p-1 font-[600] bg-white">
+                                <button
+                                    class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 ">
+                                    Phòng
+                                </button>
+                                <button
+                                    class="p-2 w-[100px] rounded-full hover:text-[var(--navbar-color-)] duration-300 active">
+                                    Thanh toán
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 text-base">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 14px; height:14px;"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+                            </svg>
+                        </div>
+                        <div><span>#3</span></div>
+                        <div><span>Còn lại 0 VND</span></div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height:16px;"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m5.705 3.71-1.41-1.42C1 5.563 1 7.935 1 11h1l1-.063C3 8.009 3 6.396 5.705 3.71zm13.999-1.42-1.408 1.42C21 6.396 21 8.009 21 11l2-.063c0-3.002 0-5.374-3.296-8.647zM12 22a2.98 2.98 0 0 0 2.818-2H9.182A2.98 2.98 0 0 0 12 22zm7-7.414V10c0-3.217-2.185-5.927-5.145-6.742C13.562 2.52 12.846 2 12 2s-1.562.52-1.855 1.258C7.184 4.073 5 6.783 5 10v4.586l-1.707 1.707A.996.996 0 0 0 3 17v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1a.996.996 0 0 0-.293-.707L19 14.586z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height:16px;"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 14px; height:14px;"
+                                viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Toolbar Top -->
+
+                <div class="bg-white border !border-[var(--ht-neutral-100-)] rounded-md">
+                    <div class="h-full">
+                        <div class="p-2 border-b !border-[var(--ht-neutral-100-)]">
+
+                            <!-- Div hiển thị mặc định -->
+                            <!-- Bấm vào Tổng hoá đơn => thêm class hidden để ẩn div này-->
+                            <div class="flex items-center gap-5">
+                                
+                                <div class="flex items-center"> 
+                                    <p>
+                                        Chọn 
+                                        '<button class="border border-green-400 rounded-full p-[1px]">
+                                            <svg class="text-green-400 dark:text-white" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5" />
+                                            </svg>
+                                        </button>'
+                                        để thêm thanh toán hoặc
+                                        '<div class="w-4 h-4 border border-black bg-white rounded-sm">
+
+                                        </div>'
+                                        để thanh toán nhiều phòng
+                                    </p>
+                                </div>
+
+                                <label class="flex items-center gap-1 py-2 px-4 border border-green-400 rounded-md cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4">
+                                    <p>Áp dụng thuế/ phí cho tất cả phòng</p>
+                                </label>
+                            </div>
+                            
+                            <!-- Bấm vào Tổng hoá đơn => thêm class flex để hiển thị div này-->
+                            <div class="hidden items-center gap-3">
+                                <button class="btn-fn bg-blue-100 text-[#60a5fa]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                                        style="fill:#60a5fa ;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                        <path
+                                            d="M160 0c17.7 0 32 14.3 32 32l0 35.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11l0 33.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.9c-.4-.1-.9-.1-1.3-.2l-.2 0s0 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7s0 0 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11L128 32c0-17.7 14.3-32 32-32z">
+                                        </path>
+                                    </svg>
+                                    <p><span>Thanh toán</span></p>
+                                </button>
+
+                                <button
+                                    class="btn-fn bg-[var(--room-not-arrived-color-100-)] text-[var(--room-not-arrived-color-)]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        style="fill: var(--room-not-arrived-color-); margin-top: 1px;">
+                                        <path
+                                            d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z">
+                                        </path>
+                                    </svg>
+                                    <p><span>Trả phòng</span></p>
+                                </button>
+
+                                <button 
+                                    class="py-2 px-4 text-green-400 border border-green-400 rounded-md">
+                                    Đổi ngày ở
+                                </button>
+
+                                <label class="flex items-center gap-1 py-2 px-4 border border-green-400 rounded-md cursor-pointer">
+                                    <input type="checkbox" class="w-4 h-4">
+                                    <p>Áp dụng thuế/ phí cho tất cả phòng</p>
+                                </label>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="grid grid-cols-10">
+                            <div class="col-span-2 border-r !border-[var(--ht-neutral-100-)]">
+                                <label  class=" cursor-pointer">
+                                    <div
+                                        class="flex items-center justify-between hover:bg-[var(--ht-body-bg-)] px-3 py-4 border-b !border-[var(--ht-neutral-100-)]">
+                                        <div
+                                            class="flex items-center gap-3 text-black font-medium">
+                                            <input type="checkbox" class="w-4 h-4">
+                                            <p >Tổng hoá đơn</p>
+                                        </div>
+    
+                                        <div class="group relative">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill: black;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                                                <div 
+                                                    class="bg-gray-500 w-24 text-white rounded-md py-1 hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block">
+                                                    In hoá đơn
+    
+                                                    <div class="absolute -top-2 left-1/2 -translate-x-1/2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </label>
+
+                                <label class="cursor-pointer">
+
+                                    <div
+                                        class="flex items-center justify-between hover:bg-[var(--ht-body-bg-)] px-3 py-4 border-b !border-[var(--ht-neutral-100-)]">
+                                        <div
+                                            class="flex items-center gap-3 text-black font-medium">
+                                            <input type="checkbox" class="w-4 h-4">
+                                            <div class="flex items-center gap-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+                                                    style="fill: red; width: 16px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z" />
+                                                </svg>
+                                                <p>Standard 202</p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="group relative">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill: black;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                                                <div 
+                                                    class="bg-gray-500 w-24 text-white rounded-md py-1 hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block">
+                                                    In hoá đơn
+    
+                                                    <div class="absolute -top-2 left-1/2 -translate-x-1/2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label class="cursor-pointer">
+
+                                    <div
+                                        class="flex items-center justify-between hover:bg-[var(--ht-body-bg-)] px-3 py-4 border-b !border-[var(--ht-neutral-100-)]">
+                                        <div
+                                            class="flex items-center gap-3 text-black font-medium">
+                                            <input type="checkbox" class="w-4 h-4">
+                                            <div class="flex items-center gap-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+                                                    style="fill: red; width: 16px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z" />
+                                                </svg>
+                                                <p >Standard 302</p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="group relative">
+                                            <button>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill: black;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                                                <div 
+                                                    class="bg-gray-500 w-24 text-white rounded-md py-1 hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block">
+                                                    In hoá đơn
+    
+                                                    <div class="absolute -top-2 left-1/2 -translate-x-1/2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="col-span-5 p-3 border-r !border-[var(--ht-neutral-100-)]">
+
+                                <div class="flex flex-col">
+
+                                    <div class="border-b text-sm">
+    
+                                        <div class="grid grid-cols-3">
+    
+                                            <div class="col-span-2">
+                                                <div class="flex justify-between">
+                                                    <p>Thời gian ở</p>
+    
+                                                    <div class="flex flex-col text-end">
+                                                        <p>
+                                                            Tổng
+                                                        </p>
+    
+                                                        <p>(2,600,000)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="">
+                                                <div class="flex flex-col text-end">
+                                                    <p>
+                                                        Đã thanh toán
+                                                    </p>
+    
+                                                    <p>(0)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+
+                                    <div class="border-b text-sm py-4">
+
+                                        <div class="grid grid-cols-3">
+    
+                                            <div class="col-span-2">
+                                                <div class="flex justify-between">
+                                                    <p>07/10 7:49</p>
+    
+                                                    <div class="flex flex-col text-end">
+    
+                                                        <p>2,600,000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="">
+                                                <div class="flex items-center justify-end gap-1">
+    
+                                                    <p>0</p>
+
+                                                    <button class="group border border-green-400 hover:bg-[var(--navbar-color-)] duration-200 rounded-full p-[1px]">
+                                                        <svg class="text-green-400 group-hover:text-white dark:text-white" aria-hidden="true"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5" />
+                                                        </svg>
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+
+                                    <div class="border-b text-sm py-4">
+
+                                        <div class="grid grid-cols-3">
+    
+                                            <div class="col-span-2">
+                                                <div class="flex justify-between">
+                                                    <p>07/10 7:49</p>
+    
+                                                    <div class="flex flex-col text-end">
+    
+                                                        <p>2,600,000</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="">
+                                                <div class="flex items-center justify-end gap-1">
+    
+                                                    <p>0</p>
+
+                                                    <button class="group border border-green-400 hover:bg-[var(--navbar-color-)] duration-200 rounded-full p-[1px]">
+                                                        <svg class="text-green-400 group-hover:text-white dark:text-white" aria-hidden="true"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5" />
+                                                        </svg>
+                                                    </button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+
+                                </div>
+
+                                <!-- Bấm vào tổng hoá đơn => bỏ class hidden để hiển thị div này -->
+                                <div class="hidden">
+
+                                    <div
+                                        class="flex items-center justify-between text-black text-lg font-bold pb-3 border-b !border-[var(--ht-neutral-100-)]">
+                                        <div class="flex items-center gap-1">
+                                            <p><span>Standard 302</span></p>
+    
+                                            <button class="group relative border border-green-400 rounded-full p-[1px]">
+                                                <svg class="text-green-400 dark:text-white" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5" />
+                                                </svg>
+    
+                                                <div 
+                                                    class="bg-gray-500 w-32 text-white text-sm font-normal rounded-md py-1 hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block">
+                                                    Thêm thanh toán
+    
+                                                    <div class="absolute -top-2 left-1/2 -translate-x-1/2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+                                                    </div>
+                                                </div>
+                                            </button>
+    
+                                        </div>
+                                        <p class="price"><span>1,800,350 VND</span></p>
+                                    </div>
+
+
+                                    <div class="grid grid-cols-4 py-3 border-b !border-[var(--ht-neutral-100-)]">
+                                        <div class="col-span-1">
+                                            <p><span>Tiền phòng</span></p>
+                                        </div>
+                                        <div class="flex flex-col col-span-3">
+                                            <div class="flex justify-between py-1"><span>Giá đêm (03/04 21:00 - 04/04 12:00)</span>
+                                                <div>300,000</div>
+                                            </div>
+                                            <div class="flex justify-between py-1"><span>Giá đêm (03/04 21:00 - 04/04 12:00)</span>
+                                                <div>300,000</div>
+                                            </div>
+                                            <div class="flex justify-between py-1"><span>Nhận phòng sớm (49 phút)</span>
+                                                <div>50,000</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="grid grid-cols-4 text-left py-3 border-b !border-[var(--ht-neutral-100-)]">
+                                        <div>
+                                            <button class="flex gap-1 items-center font-medium text-green-400 js-service-btn">
+                                                <svg class="mt-[2.5px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 12h14m-7 7V5">
+                                                    </path>
+                                                </svg>
+                                                <p><span>Dịch vụ</span></p>
+                                            </button>
+                                        </div>
+    
+                                        <div class="flex flex-col col-span-3">
+                                            <ul>
+                                                <li class="flex justify-between py-1">
+                                                    <span>Pillow/ Gối(1)</span>
+                                                    <div>400,000</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="grid grid-cols-4 py-3 border-b !border-[var(--ht-neutral-100-)]">
+                                        <div class="col-span-1 font-medium text-green-400">
+                                            <p><span>Giảm giá</span></p>
+                                        </div>
+                                        <div class="flex flex-col col-span-2">
+                                            <p><span>0</span></p>
+                                        </div>
+                                        <div class="col-span-1 text-right">
+                                            <p><span>0</span></p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="text-left py-3 border-b !border-[var(--ht-neutral-100-)]">
+                                        <div class="flex items-center gap-2">
+                                            <input type="checkbox" class="w-4 h-4">
+                                            <p><span>Thuế/Phí</span></p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="grid grid-cols-4 pb-3">
+                                        <div class="col-span-1">
+            
+                                        </div>
+                                        <div class="flex flex-col col-span-3 font-medium text-black">
+                                            <div>
+                                                <div
+                                                    class="flex items-center justify-between py-2 border-b !border-[var(--ht-neutral-100-)]">
+                                                    <p><span>Cần thanh toán</span></p>
+                                                    <p><span>0</span></p>
+                                                </div>
+            
+                                                <div
+                                                    class="flex items-center justify-between py-2 border-b !border-[var(--ht-neutral-100-)]">
+                                                    <p><span>Đã thanh toán</span></p>
+                                                    <p><span>0</span></p>
+                                                </div>
+            
+                                                <div
+                                                    class="flex items-center justify-between py-2 border-b !border-[var(--ht-neutral-100-)]">
+                                                    <p><span>Còn lại</span></p>
+                                                    <p><span>0</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-span-3 p-3">
+                                <div class="flex items-center justify-between">
+                                    <p 
+                                        class="text-gray-600 font-medium">
+                                        Danh sách đã thanh toán 
+                                    </p>
+                                </div>
+
+                                <div class="mt-8 flex flex-col gap-5">
+                                    <div class="checkout-detail flex items-center justify-between cursor-pointer">
+                                        <div>
+                                            <p class="font-medium">Standard 302 (Tiền mặt)</p>
+                                            <p>07/04 16:41 - Test</p>
+                                            <p>Thanh toan 1 phan tien phong</p>
+                                        </div>
+
+                                        <div class="text-green-500 font-medium">
+                                            <div class="price">
+                                                <p>+ 1,000,000 VNĐ</p>
+                                            </div>
+
+                                            <div class="hidden select items-center gap-2">
+                                                <div class="group relative">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill: black;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                                                        <div 
+                                                            class="bg-gray-500 w-24 text-white rounded-md py-1 hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block">
+                                                            In hoá đơn
+            
+                                                            <div class="absolute -top-2 left-1/2 -translate-x-1/2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                                <button
+                                                    class="bg-[var(--room-dirty-color-100-)] border-none rounded-full p-[1px]">
+                                                    <svg class=" text-[var(--room-dirty-color-)] dark:text-white"
+                                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                        style="width: 12px; height: 12px;" viewBox="0 0 24 24">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="2"
+                                                            d="M6 18 17.94 6M18 18 6.06 6"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkout-detail flex items-center justify-between cursor-pointer">
+                                        <div>
+                                            <p class="font-medium">Standard 302 (Tiền mặt)</p>
+                                            <p>07/04 16:41 - Test</p>
+                                            <p>Thanh toan 1 phan tien phong</p>
+                                        </div>
+
+                                        <div class="text-green-500 font-medium">
+                                            <div class="price">
+                                                <p>+ 1,000,000 VNĐ</p>
+                                            </div>
+
+                                            <div class="hidden select items-center gap-2">
+                                                <div class="group relative">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill: black;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                                                        <div 
+                                                            class="bg-gray-500 w-24 text-white rounded-md py-1 hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block">
+                                                            In hoá đơn
+            
+                                                            <div class="absolute -top-2 left-1/2 -translate-x-1/2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                                <button
+                                                    class="bg-[var(--room-dirty-color-100-)] border-none rounded-full p-[1px]">
+                                                    <svg class=" text-[var(--room-dirty-color-)] dark:text-white"
+                                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                        style="width: 12px; height: 12px;" viewBox="0 0 24 24">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="2"
+                                                            d="M6 18 17.94 6M18 18 6.06 6"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checkout-detail flex items-center justify-between cursor-pointer">
+                                        <div>
+                                            <p class="font-medium">Standard 302 (Tiền mặt)</p>
+                                            <p>07/04 16:41 - Test</p>
+                                            <p>Thanh toan 1 phan tien phong</p>
+                                        </div>
+
+                                        <div class="text-green-500 font-medium">
+                                            <div class="price">
+                                                <p>+ 1,000,000 VNĐ</p>
+                                            </div>
+
+                                            <div class="hidden select items-center gap-2">
+                                                <div class="group relative">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill: black;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M128 0C92.7 0 64 28.7 64 64l0 96 64 0 0-96 226.7 0L384 93.3l0 66.7 64 0 0-66.7c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0L128 0zM384 352l0 32 0 64-256 0 0-64 0-16 0-16 256 0zm64 32l32 0c17.7 0 32-14.3 32-32l0-96c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64l0 96c0 17.7 14.3 32 32 32l32 0 0 64c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-64zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                                                        <div 
+                                                            class="bg-gray-500 w-24 text-white rounded-md py-1 hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block">
+                                                            In hoá đơn
+            
+                                                            <div class="absolute -top-2 left-1/2 -translate-x-1/2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+                                                            </div>
+                                                        </div>
+                                                    </button>
+                                                </div>
+
+                                                <button
+                                                    class="bg-[var(--room-dirty-color-100-)] border-none rounded-full p-[1px]">
+                                                    <svg class=" text-[var(--room-dirty-color-)] dark:text-white"
+                                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                        style="width: 12px; height: 12px;" viewBox="0 0 24 24">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="2"
+                                                            d="M6 18 17.94 6M18 18 6.06 6"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+</body>
+
+</html>

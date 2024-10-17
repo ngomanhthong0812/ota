@@ -11,26 +11,26 @@
 <body>
     <div class="modal fixed top-0 bottom-0 left-0 right-0 z-20 flex items-center justify-center bg-black bg-opacity-40">
         <div class="modal-container w-auto h-auto px-4 py-3 bg-white rounded-xl ">
-            <header class="modal-header flex items-center text-black font-medium">
+            <header class="modal-header text-black font-medium text-lg">
                 <p>Thanh toán</p>
             </header>
 
-            <div class="flex items-center gap-5 text-base">
+            <div class="flex items-center gap-6 py-2 font-medium text-black">
                 <div class="flex items-center gap-2">
-                    <input type="radio">
-                    <p>Thanh toán</p>
+                    <input type="radio" name="payment-option" checked class="w-4 h-4">
+                    <p><span>Thanh toán</span></p>
                 </div>
 
                 <div class="flex items-center gap-2">
-                    <input type="radio">
-                    <p>Hoàn tiền</p>
+                    <input type="radio" name="payment-option" class="w-4 h-4">
+                    <p><span>Hoàn tiền</span></p>
                 </div>
             </div>
 
             <div class="grid grid-cols-3 gap-5 mt-5">
                 <div class="flex flex-col">
                     <label for="">Hình thức TT</label>
-                    <select name="" id="" class="border px-2 py-1 rounded-md">
+                    <select name="" id="" class="btn">
                         <option value="">Tiền mặt</option>
                         <option value="">Ti</option>
                     </select>
@@ -38,7 +38,7 @@
 
                 <div class="flex flex-col">
                     <label for="">Tiền tệ</label>
-                    <select name="" id="" class="border px-2 py-1 rounded-md">
+                    <select name="" id="" class="btn">
                         <option value="">VND</option>
                         <option value="">USD</option>
                     </select>
@@ -46,18 +46,24 @@
 
                 <div class="flex flex-col">
                     <label for="">Số tiền</label>
-                    <input type="text" class="border px-2 py-1 text-right rounded-md focus:outline-blue-400">
+                    <input type="text" class="btn">
                 </div>
             </div>
 
             <div class="flex modal-body mt-5">
-                <textarea name="note" id="note" rows="3" cols="50" class="w-full border border-[#ccc] rounded-md focus:outline-blue-400 px-2" placeholder="Ghi chú"></textarea>
+                <textarea name="note" id="note" rows="3" cols="50" class="btn" placeholder="Ghi chú"></textarea>
             </div>
 
             <footer class="modal-footer">
-                <div class="flex items-center justify-end gap-x-10 py-3 font-medium">
-                    <button class="text-blue-500">Bỏ qua</button>
-                    <button class="text-gray-500 hover:text-blue-500">Thanh toán</button>
+                <div class="flex items-center justify-end gap-x-5 py-3 font-semibold">
+                    <button 
+                        class="text-[#d147a3] w-28 py-1 rounded-md border border-[#d147a3] hover:bg-[#d147a3] hover:text-white duration-200">
+                        Bỏ qua
+                    </button>
+                    <button 
+                        class="w-28 py-1 bg-white border border-[var(--navbar-color-)] text-[var(--navbar-color-)]  rounded-md hover:bg-[var(--navbar-color-)] hover:text-white duration-200">
+                        Thanh toán
+                    </button>
                 </div>
             </footer>
         </div>

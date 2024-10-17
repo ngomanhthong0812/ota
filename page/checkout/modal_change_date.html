@@ -14,7 +14,7 @@
 <body>
     <div class="modal fixed top-0 bottom-0 left-0 right-0 z-20 flex items-center justify-center bg-black bg-opacity-40">
         <div class="modal-container w-96 h-auto px-4 py-3 bg-white rounded-xl ">
-            <header class="modal-header flex items-center text-black font-medium">
+            <header class="modal-header text-lg font-medium text-black">
                 <p>Đổi ngày ở</p>
             </header>
 
@@ -33,51 +33,50 @@
             </div>
 
 
-            <div class="p-4 bg-white">
+            <div class="py-4 bg-white">
                 <div>
                     <label for="check-in" class="block text-sm font-semibold text-gray-700">Sẽ đến</label>
-                    <input type="text" id="check-in" class="flatpickr form-input mt-1 block w-full border-gray-300 rounded-md focus:outline-blue-500" placeholder="Chọn ngày đến">
+                    <input 
+                        type="datetime-local" 
+                        id="check-in" 
+                        class="btn" 
+                        placeholder="Chọn ngày đến"
+                    >
                 </div>
             
                 <div>
                     <label for="check-out" class="block text-sm font-semibold text-gray-700 mt-4">Sẽ đi</label>
                     <div class="grid grid-cols-3 gap-x-5">
-                        <input type="text" id="check-out" class="flatpickr form-input mt-1 block col-span-2 border-gray-300 rounded-md focus:outline-blue-500" placeholder="Chọn ngày đi">
-                        <button id="current-date" class="text-blue-400 font-medium border-2 border-blue-400 rounded-md">Hiện tại</button>
+                        <input 
+                            type="datetime-local" 
+                            id="check-out" 
+                            class="btn col-span-2" 
+                            placeholder="Chọn ngày đi"
+                        >
+                        <button 
+                            id="current-date" 
+                            class="bg-white border border-[var(--navbar-color-)] text-[var(--navbar-color-)] font-semibold rounded-md hover:bg-[var(--navbar-color-)] hover:text-white duration-200">
+                            Hiện tại
+                        </button>
                     </div>
                 </div>
             </div>
               
 
             <footer class="modal-footer">
-                <div class="flex items-center justify-end gap-x-5 py-3 font-medium">
-                    <button class="text-blue-500 w-24 py-1 rounded-md">Đóng</button>
-                    <button class="text-white w-24 py-1 rounded-md bg-blue-500 ">Lưu</button>
+                <div class="flex items-center justify-end gap-x-5 py-3 font-semibold">
+                    <button 
+                        class="text-[#d147a3] w-24 py-1 rounded-md border border-[#d147a3] hover:bg-[#d147a3] hover:text-white duration-200">
+                        Đóng
+                    </button>
+                    <button 
+                        class="w-24 py-1 bg-white border border-[var(--navbar-color-)] text-[var(--navbar-color-)]  rounded-md hover:bg-[var(--navbar-color-)] hover:text-white duration-200">
+                        Lưu
+                    </button>
                 </div>
             </footer>
         </div>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            flatpickr("#check-in", {
-                enableTime: true,
-                dateFormat: "d/m/Y H:i",
-                minDate: "today"
-            });
-
-            const checkInField = flatpickr("#check-out", {
-                enableTime: true,
-                dateFormat: "d/m/Y H:i",
-                minDate: "today"
-            });
-
-            document.getElementById("current-date").addEventListener("click", function() {
-                const currentDate = new Date();
-                checkInField.setDate(currentDate);  // Đặt ngày hiện tại vào Flatpickr
-            });
-        });
-    </script>
 
 </body>
 </html>
