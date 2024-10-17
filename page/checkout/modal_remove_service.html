@@ -11,18 +11,24 @@
 <body>
     <div class="modal fixed top-0 bottom-0 left-0 right-0 z-20 flex items-center justify-center bg-black bg-opacity-40">
         <div class="modal-container w-80 h-auto px-4 py-3 bg-white rounded-xl ">
-            <header class="modal-header flex items-center text-black font-medium">
+            <header class="modal-header text-black text-lg font-medium">
                 <p>Xoá dịch vụ</p>
             </header>
 
             <div class="flex modal-body mt-3">
-                <textarea name="note" id="note" rows="3" cols="50" class="w-full border border-[#ccc] rounded-md focus:outline-blue-400 px-2" placeholder="Lý do (bắt buộc)"></textarea>
+                <textarea name="note" id="note" rows="3" cols="50" class="btn" placeholder="Lý do (bắt buộc)"></textarea>
             </div>
 
             <footer class="modal-footer">
-                <div class="flex items-center justify-end gap-x-10 py-3 font-medium">
-                    <button class="text-blue-500">Bỏ qua</button>
-                    <button class="text-gray-500 hover:text-blue-500">Thực hiện</button>
+                <div class="flex items-center justify-end gap-x-5 py-3 font-semibold">
+                    <button 
+                        class="text-[#d147a3] w-28 py-1 rounded-md border border-[#d147a3] hover:bg-[#d147a3] hover:text-white duration-200">
+                        Bỏ qua
+                    </button>
+                    <button 
+                        class="w-28 py-1 bg-white border border-[var(--navbar-color-)] text-[var(--navbar-color-)]  rounded-md hover:bg-[var(--navbar-color-)] hover:text-white duration-200">
+                        Thực hiện
+                    </button>
                 </div>
             </footer>
         </div>
