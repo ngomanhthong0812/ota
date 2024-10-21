@@ -184,6 +184,10 @@ body svg {
     @apply flex;
 }
 
+.active-tab {
+    @apply border-b-2 border-[var(--room-empty-color-)];
+}
+
 
 /* nguyên */
 .btn-loaigia {
