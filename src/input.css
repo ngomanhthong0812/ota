@@ -86,8 +86,8 @@ body svg {
     /* Có khách */
 }
 
-.room-out-of-service {
-    @apply border-[var(--room-out-of-service-color-)] text-[var(--room-out-of-service-color-)];
+.room-not-checked-out {
+    @apply border-[var(--room-not-checked-out-color-)] text-[var(--room-not-checked-out-color-)];
     /* Chứa đi */
 }
 
